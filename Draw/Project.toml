@@ -1,0 +1,10 @@
+name = "Draw"
+uuid = "b2ba35a9-edc6-41d4-89d4-54cd78fd0cc9"
+authors = ["Arthur Santana <rockslave@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Covering = "ee6302d9-777b-42db-b1c2-2d88f1e554c9"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+Voronoi = "66662c87-25d6-4c1c-819b-3e05717c8b1e"

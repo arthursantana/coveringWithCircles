@@ -1,0 +1,7 @@
+name = "Covering"
+uuid = "ee6302d9-777b-42db-b1c2-2d88f1e554c9"
+authors = ["Arthur Santana <rockslave@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Voronoi = "66662c87-25d6-4c1c-819b-3e05717c8b1e"
