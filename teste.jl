@@ -20,7 +20,7 @@ function gradientDescent()
    Random.seed!(seed)
 
    command = nothing
-   for n in 3:100
+   for n in 50:100
       if sqrt(n) == floor(sqrt(n))
          continue
       end
@@ -36,24 +36,24 @@ function gradientDescent()
       α = 0.01
       ϵ = 10^-1
       λ₀ = 0.01
+      r = WIDTH/(1.5*sqrt(n))
 
       times = time
 
       while ξ > ϵ
-         r = 25
-         section = Covering.regionToCoveringSection(V.regions[1], r)
-         head = section.borderHead
-         el = head.next
-         while  el != head
-             println(el.origin)
-             el = el.next
+
+         sections = Array{Covering.Section, 1}(undef, n)
+         for i in 1:n
+             sections[i] = Covering.regionToCoveringSection(V.regions[i], r)
          end
 
          @printf("f = %.10g\t\t|∇f| = %.10g\t\ttime: %s seconds\n", f, ξ, time)
 
          Draw.init(WIDTH, HEIGHT)
          Draw.voronoiDiagram(V)
-         Draw.coveringSection(section, Real(r))
+         for i in 1:n
+             Draw.coveringSection(sections[i], Real(r))
+         end
          Draw.commit()
 
          d = ∇f
@@ -68,7 +68,7 @@ function gradientDescent()
             println("Press Return for a step or enter \"a\" to animate until the end.")
             command = readline(stdin)
          else
-            sleep(0.0000001) # make sure stuff is drawn
+            sleep(0.001) # make sure stuff is drawn
          end
       end
 

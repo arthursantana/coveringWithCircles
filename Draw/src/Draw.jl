@@ -18,8 +18,8 @@ WIDTH = nothing
 HEIGHT = nothing
 FRAME = 0
 
-#colors = ["white"]
-colors = ["xkcd:grey", "xkcd:crimson", "xkcd:gold", "xkcd:green", "xkcd:azure", "xkcd:beige", "xkcd:silver", "xkcd:lavender", "xkcd:lightgreen", "xkcd:magenta", "xkcd:ivory", "xkcd:maroon", "xkcd:orange", "xkcd:orangered", "xkcd:orchid", "xkcd:pink", "xkcd:plum", "xkcd:gold", "xkcd:salmon", "xkcd:sienna", "xkcd:lime", "xkcd:tan", "xkcd:tomato", "xkcd:violet", "xkcd:wheat", "xkcd:indigo", "xkcd:yellowgreen", "xkcd:chocolate", "xkcd:coral", "xkcd:brown"]
+colors = ["white"]
+#colors = ["xkcd:grey", "xkcd:crimson", "xkcd:gold", "xkcd:green", "xkcd:azure", "xkcd:beige", "xkcd:silver", "xkcd:lavender", "xkcd:lightgreen", "xkcd:magenta", "xkcd:ivory", "xkcd:maroon", "xkcd:orange", "xkcd:orangered", "xkcd:orchid", "xkcd:pink", "xkcd:plum", "xkcd:gold", "xkcd:salmon", "xkcd:sienna", "xkcd:lime", "xkcd:tan", "xkcd:tomato", "xkcd:violet", "xkcd:wheat", "xkcd:indigo", "xkcd:yellowgreen", "xkcd:chocolate", "xkcd:coral", "xkcd:brown"]
 
 
 function init(w, h)
@@ -70,11 +70,16 @@ function commit()
    plt.draw()
 end
 
-
-function circle(p::Tuple{Real, Real}, color, fill, r, l)
+function arc(p::Tuple{Real, Real}, r, θ1, θ2, color)
    global ax
 
-   ax.add_artist(patch.Circle((p[1], p[2]), color=color, radius=r, fill=fill, zorder=3, linewidth=l))
+   ax.add_artist(patch.Arc((p[1], p[2]), 2r, 2r, 0, θ1, θ2, color=color, linewidth=3, zorder=1))
+end
+
+function circle(p::Tuple{Real, Real}, color, fill, r, l, zorder=3)
+   global ax
+
+   ax.add_artist(patch.Circle((p[1], p[2]), color=color, radius=r, fill=fill, zorder=zorder, linewidth=l))
 end
 
 function point(p::Tuple{Real, Real}, color, fill)
@@ -263,9 +268,9 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     for he in V.halfEdges
         if he.origin != nothing
             if he.twin != nothing
-                Draw.line(he.origin, he.twin.origin, "xkcd:black")
+                Draw.line(he.origin, he.twin.origin, "xkcd:silver")
             elseif he.next != nothing
-                Draw.line(he.origin, he.next.origin, "xkcd:black")
+                Draw.line(he.origin, he.next.origin, "xkcd:silver")
             end
         end
     end
@@ -275,15 +280,63 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
         point(r.generator, "xkcd:black", true)
     end
 
-    line((0, 0), (0, HEIGHT), "cyan")
-    line((0, 0), (WIDTH, 0), "cyan")
-    line((WIDTH, 0), (WIDTH, HEIGHT), "cyan")
-    line((0, HEIGHT), (WIDTH, HEIGHT), "cyan")
+    #line((0, 0), (0, HEIGHT), "cyan")
+    #line((0, 0), (WIDTH, 0), "cyan")
+    #line((WIDTH, 0), (WIDTH, HEIGHT), "cyan")
+    #line((0, HEIGHT), (WIDTH, HEIGHT), "cyan")
+end
+
+function radianToDegrees(rad)
+    return rad*180/π
+end
+
+function segmentAngle(p, q)
+    num = q[2] - p[2]
+    den = q[1] - p[1]
+    if num > 0 && den > 0
+        #println("1º quadrante")
+        angle = atan(num/den)
+    elseif num > 0 && den < 0
+        #println("2º quadrante")
+        angle = π - atan(-num/den)
+    elseif num < 0 && den < 0
+        #println("3º quadrante")
+        angle = π + atan(num/den)
+    else # num < 0 && den > 0
+        #println("4º quadrante")
+        angle = -atan(-num/den)
+    end
+
+    return angle
 end
 
 function coveringSection(section::Covering.Section, r::Real)
-    circle(section.center, "xkcd:gray", false, r, 1)
-    #circle(section.center, "xkcd:pumpkin", false, r, 3)
+    center = section.center
+
+    circle(center, "xkcd:gray", false, r, 1)
+
+    el = section.borderHead.next
+    i = 0
+    if el isa Covering.Arc
+        arc(section.center, r, radianToDegrees(segmentAngle(center, el.origin)), radianToDegrees(segmentAngle(center, el.next.origin)), "xkcd:tomato")
+    else
+        line(el.origin, el.next.origin, "xkcd:tan")
+    end
+
+    while (el != section.borderHead)
+        el = el.next
+        i += 1
+        if el isa Covering.Arc
+            arc(section.center, r, radianToDegrees(segmentAngle(center, el.origin)), radianToDegrees(segmentAngle(center, el.next.origin)), "xkcd:tomato")
+        else
+            line(el.origin, el.next.origin, "xkcd:tan")
+        end
+        for p in Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 
+                                                                          Voronoi.Diagram.HalfEdge(el.next.origin, false, nothing, nothing, nothing, center),
+                                                                          nothing, center), center, r)
+            point(p, "xkcd:red", true)
+        end
+    end
 end
 
 end # module
