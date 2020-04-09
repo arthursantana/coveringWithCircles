@@ -20,7 +20,7 @@ function gradientDescent()
    Random.seed!(seed)
 
    command = nothing
-   for n in 50:100
+   for n in 5:100
       if sqrt(n) == floor(sqrt(n))
          continue
       end
@@ -41,35 +41,28 @@ function gradientDescent()
       times = time
 
       while ξ > ϵ
+          P = Covering.voronoiDiagramToPartition(V, r)
+          @printf("f = %.10g\t\t|∇f| = %.10g\t\ttime: %s seconds\n", f, ξ, time)
 
-         sections = Array{Covering.Section, 1}(undef, n)
-         for i in 1:n
-             sections[i] = Covering.regionToCoveringSection(V.regions[i], r)
-         end
+          Draw.init(WIDTH, HEIGHT)
+          Draw.voronoiDiagram(V)
+          Draw.coveringPartition(P)
+          Draw.commit()
 
-         @printf("f = %.10g\t\t|∇f| = %.10g\t\ttime: %s seconds\n", f, ξ, time)
+          d = ∇f
 
-         Draw.init(WIDTH, HEIGHT)
-         Draw.voronoiDiagram(V)
-         for i in 1:n
-             Draw.coveringSection(sections[i], Real(r))
-         end
-         Draw.commit()
+          time = @elapsed V, f, ∇f, ξ, forts = Voronoi.Optimization.lineSearch(points, d, α, λ₀, μ, ϵ, V, f, ∇f, ξ)
 
-         d = ∇f
+          times += time
+          fortunes += forts
+          iterations += 1
 
-         time = @elapsed V, f, ∇f, ξ, forts = Voronoi.Optimization.lineSearch(points, d, α, λ₀, μ, ϵ, V, f, ∇f, ξ)
-
-         times += time
-         fortunes += forts
-         iterations += 1
-
-         if command != "a"
-            println("Press Return for a step or enter \"a\" to animate until the end.")
-            command = readline(stdin)
-         else
-            sleep(0.001) # make sure stuff is drawn
-         end
+          if command != "a"
+              println("Press Return for a step or enter \"a\" to animate until the end.")
+              command = readline(stdin)
+          else
+              sleep(0.001) # make sure stuff is drawn
+          end
       end
 
       println("n: ", n, "\t\titer: ", iterations, "\t\tfortunes: ", fortunes, "\t\ttime: ", times)

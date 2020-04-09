@@ -98,7 +98,7 @@ function intersectedSegment(segment::Voronoi.Diagram.HalfEdge, center::Tuple{Rea
     return head, el
 end
 
-function regionToCoveringSection(region::Voronoi.Diagram.Region, r::Real)
+function voronoiRegionToCoveringSection(region::Voronoi.Diagram.Region, r::Real)
     he = region.borderHead.next
     head, tail = intersectedSegment(he, region.generator, r)
 
@@ -110,6 +110,22 @@ function regionToCoveringSection(region::Voronoi.Diagram.Region, r::Real)
     tail.next = head
 
     return Section(region.generator, head)
+end
+
+mutable struct Partition
+    sections::Array{Covering.Section}
+    r::Real
+end
+
+function voronoiDiagramToPartition(V::Voronoi.Diagram.DCEL, r::Real)
+    n = length(V.regions)
+    sections = Array{Covering.Section, 1}(undef, n)
+
+    for i in 1:n
+        sections[i] = Covering.voronoiRegionToCoveringSection(V.regions[i], r)
+    end
+
+    return Partition(sections, r)
 end
 
 end # module

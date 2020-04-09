@@ -16,7 +16,7 @@ plt = PyPlot
 ax = nothing
 WIDTH = nothing
 HEIGHT = nothing
-FRAME = 0
+FRAME = 10
 
 colors = ["white"]
 #colors = ["xkcd:grey", "xkcd:crimson", "xkcd:gold", "xkcd:green", "xkcd:azure", "xkcd:beige", "xkcd:silver", "xkcd:lavender", "xkcd:lightgreen", "xkcd:magenta", "xkcd:ivory", "xkcd:maroon", "xkcd:orange", "xkcd:orangered", "xkcd:orchid", "xkcd:pink", "xkcd:plum", "xkcd:gold", "xkcd:salmon", "xkcd:sienna", "xkcd:lime", "xkcd:tan", "xkcd:tomato", "xkcd:violet", "xkcd:wheat", "xkcd:indigo", "xkcd:yellowgreen", "xkcd:chocolate", "xkcd:coral", "xkcd:brown"]
@@ -76,7 +76,7 @@ function arc(p::Tuple{Real, Real}, r, θ1, θ2, color)
    ax.add_artist(patch.Arc((p[1], p[2]), 2r, 2r, 0, θ1, θ2, color=color, linewidth=3, zorder=1))
 end
 
-function circle(p::Tuple{Real, Real}, color, fill, r, l, zorder=3)
+function circle(p::Tuple{Real, Real}, color, fill, r, l, zorder=1)
    global ax
 
    ax.add_artist(patch.Circle((p[1], p[2]), color=color, radius=r, fill=fill, zorder=zorder, linewidth=l))
@@ -336,6 +336,12 @@ function coveringSection(section::Covering.Section, r::Real)
                                                                           nothing, center), center, r)
             point(p, "xkcd:red", true)
         end
+    end
+end
+
+function coveringPartition(P::Covering.Partition)
+    for section in P.sections
+        Draw.coveringSection(section, P.r)
     end
 end
 
