@@ -286,30 +286,6 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     #line((0, HEIGHT), (WIDTH, HEIGHT), "cyan")
 end
 
-function radianToDegrees(rad)
-    return rad*180/π
-end
-
-function segmentAngle(p, q)
-    num = q[2] - p[2]
-    den = q[1] - p[1]
-    if num > 0 && den > 0
-        #println("1º quadrante")
-        angle = atan(num/den)
-    elseif num > 0 && den < 0
-        #println("2º quadrante")
-        angle = π - atan(-num/den)
-    elseif num < 0 && den < 0
-        #println("3º quadrante")
-        angle = π + atan(num/den)
-    else # num < 0 && den > 0
-        #println("4º quadrante")
-        angle = -atan(-num/den)
-    end
-
-    return angle
-end
-
 function coveringSection(section::Covering.Section, r::Real)
     center = section.center
 
@@ -318,7 +294,10 @@ function coveringSection(section::Covering.Section, r::Real)
     el = section.borderHead.next
     i = 0
     if el isa Covering.Arc
-        arc(section.center, r, radianToDegrees(segmentAngle(center, el.origin)), radianToDegrees(segmentAngle(center, el.next.origin)), "xkcd:tomato")
+        arc(section.center, r,
+            Covering.radianToDegrees(Covering.segmentAngle(center, el.origin)),
+            Covering.radianToDegrees(Covering.segmentAngle(center, el.next.origin)),
+            "xkcd:tomato")
     else
         line(el.origin, el.next.origin, "xkcd:tan")
     end
@@ -327,11 +306,14 @@ function coveringSection(section::Covering.Section, r::Real)
         el = el.next
         i += 1
         if el isa Covering.Arc
-            arc(section.center, r, radianToDegrees(segmentAngle(center, el.origin)), radianToDegrees(segmentAngle(center, el.next.origin)), "xkcd:tomato")
+            arc(section.center, r,
+                Covering.radianToDegrees(Covering.segmentAngle(center, el.origin)),
+                Covering.radianToDegrees(Covering.segmentAngle(center, el.next.origin)),
+                "xkcd:tomato")
         else
             line(el.origin, el.next.origin, "xkcd:tan")
         end
-        for p in Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 
+        for p in Covering.Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 
                                                                           Voronoi.Diagram.HalfEdge(el.next.origin, false, nothing, nothing, nothing, center),
                                                                           nothing, center), center, r)
             point(p, "xkcd:red", true)

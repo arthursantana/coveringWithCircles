@@ -128,4 +128,77 @@ function voronoiDiagramToPartition(V::Voronoi.Diagram.DCEL, r::Real)
     return Partition(sections, r)
 end
 
+function radianToDegrees(rad)
+    return rad*180/π
+end
+
+function segmentAngle(p, q)
+    num = q[2] - p[2]
+    den = q[1] - p[1]
+    if num > 0 && den > 0
+        angle = atan(num/den)
+    elseif num > 0 && den < 0
+        angle = π - atan(-num/den)
+    elseif num < 0 && den < 0
+        angle = π + atan(num/den)
+    else # num < 0 && den > 0
+        angle = -atan(-num/den)
+    end
+
+    return angle
+end
+
+function areaAndGradient(section::Section, r::Real)
+    totalArea = 0
+    el = section.borderHead
+    gᵣ = 0
+    gₛx = gₛy = 0.0
+
+    firstTime = true # gimme do whiles, Julia, dammit!
+    while (el != section.borderHead || firstTime)
+        firstTime = false
+        if (el isa Arc)
+            θ1 = segmentAngle(section.center, el.origin)
+            θ2 = segmentAngle(section.center, el.next.origin)
+            θ = θ2 - θ1
+            if θ < 0
+                θ += 2π
+            end
+
+            totalArea += θ*(r^2)/2 # (θ/(2π))*π*(r^2)
+            gᵣ += r*θ # (θ/(2π))*2π*r
+            gₛx += r*(sin(θ1) - sin(θ2))
+            gₛy += r*(cos(θ2) - cos(θ1))
+        else # isa Edge
+            point = el
+            shoelace = 0
+            shoelace += el.origin[1]*el.next.origin[2] - el.origin[2]*el.next.origin[1]
+            shoelace += el.next.origin[1]*section.center[2] - el.next.origin[2]*section.center[1]
+            shoelace += section.center[1]*el.origin[2] - section.center[2]*el.origin[1]
+
+            totalArea += shoelace/2
+        end
+
+        el = el.next
+    end
+
+    return totalArea, gᵣ, (gₛx, gₛy)
+end
+
+function areaAndGradient(P::Partition)
+    n = length(P.sections)
+
+    totalArea = gᵣ = 0
+    gₛ = fill((0.0, 0.0), n)
+
+    for i in 1:n
+        a, g_r, g_s_i = areaAndGradient(P.sections[i], P.r)
+        totalArea += a
+        gᵣ += g_r
+        gₛ[i] = g_s_i
+    end
+
+    return totalArea, gᵣ, gₛ
+end
+
 end # module
