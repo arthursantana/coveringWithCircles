@@ -74,25 +74,45 @@ function segmentArcIntersections(segment::Voronoi.Diagram.HalfEdge, center::Tupl
     end
 end
 
+function distanceOutsideCircle(a, center, r)
+    d = Voronoi.Geometry.distanceSquared(a, center)
+    return d - r^2
+end
+
 function intersectedSegment(segment::Voronoi.Diagram.HalfEdge, center::Tuple{Real, Real}, r::Real)
     p = segment.origin
-    if Voronoi.Geometry.distanceSquared(p, center) < r^2
-        inside = true
-        el = head = Edge(segment.origin, nothing)
+    q = segment.next.origin
+
+    docp = distanceOutsideCircle(p, center, r)
+    docq = distanceOutsideCircle(q, center, r)
+
+    if docp <= 0 && docq <= 0 && false
+        el = head = Edge(p, nothing)
     else
-        inside = false
-        el = head = Arc(segment.origin, nothing)
-    end
+        intersections = segmentArcIntersections(segment, center, r)
 
-    for i in segmentArcIntersections(segment, center, r)
-        if inside
-            el.next = Arc(i, nothing);
+        if docq >= 0 && docp >= 0 && length(intersections) == 1
+            el = head = Arc(p, nothing)
         else
-            el.next = Edge(i, nothing);
-        end
+            if docp < 0
+                inside = true
+                el = head = Edge(p, nothing)
+            else
+                inside = false
+                el = head = Arc(p, nothing)
+            end
 
-        el = el.next
-        inside = !inside
+            for i in intersections
+                if inside
+                    el.next = Arc(i, nothing);
+                else
+                    el.next = Edge(i, nothing);
+                end
+
+                el = el.next
+                inside = !inside
+            end
+        end
     end
 
     return head, el

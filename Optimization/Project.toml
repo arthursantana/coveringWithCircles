@@ -4,5 +4,6 @@ authors = ["Arthur Santana <rockslave@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+Algencan = "016819b2-f4c4-559b-a82b-d92a82b855ff"
 Covering = "ee6302d9-777b-42db-b1c2-2d88f1e554c9"
 Voronoi = "66662c87-25d6-4c1c-819b-3e05717c8b1e"
