@@ -86,7 +86,7 @@ function intersectedSegment(segment::Voronoi.Diagram.HalfEdge, center::Tuple{Rea
     docp = distanceOutsideCircle(p, center, r)
     docq = distanceOutsideCircle(q, center, r)
 
-    if docp <= 0 && docq <= 0 && false
+    if docp <= 0 && docq <= 0
         el = head = Edge(p, nothing)
     else
         intersections = segmentArcIntersections(segment, center, r)
@@ -155,7 +155,15 @@ end
 function segmentAngle(p, q)
     num = q[2] - p[2]
     den = q[1] - p[1]
-    if num > 0 && den > 0
+    if num == 0 && den > 0
+        angle = 0
+    elseif num == 0 && den < 0
+        angle = π
+    elseif den == 0 && num > 0
+        angle = pi/2
+    elseif den == 0 && num < 0
+        angle = 3pi/2
+    elseif num > 0 && den > 0
         angle = atan(num/den)
     elseif num > 0 && den < 0
         angle = π - atan(-num/den)
@@ -186,7 +194,7 @@ function areaAndGradient(section::Section, r::Real)
             end
 
             totalArea += θ*(r^2)/2 # (θ/(2π))*π*(r^2)
-            gᵣ += r*θ # (θ/(2π))*2π*r
+            gᵣ += -r*θ # (θ/(2π))*2π*r
             gₛx += r*(sin(θ1) - sin(θ2))
             gₛy += r*(cos(θ2) - cos(θ1))
         else # isa Edge

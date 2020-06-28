@@ -1,1 +1,0 @@
-/home/arthur/projects/master/AlgencanWrapper/AlgencanWrapper.jl
