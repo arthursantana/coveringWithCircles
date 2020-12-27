@@ -16,18 +16,21 @@ plt = PyPlot
 ax = nothing
 WIDTH = nothing
 HEIGHT = nothing
-FRAME = 10
+FRAME = 0.1
 
 colors = ["white"]
 #colors = ["xkcd:grey", "xkcd:crimson", "xkcd:gold", "xkcd:green", "xkcd:azure", "xkcd:beige", "xkcd:silver", "xkcd:lavender", "xkcd:lightgreen", "xkcd:magenta", "xkcd:ivory", "xkcd:maroon", "xkcd:orange", "xkcd:orangered", "xkcd:orchid", "xkcd:pink", "xkcd:plum", "xkcd:gold", "xkcd:salmon", "xkcd:sienna", "xkcd:lime", "xkcd:tan", "xkcd:tomato", "xkcd:violet", "xkcd:wheat", "xkcd:indigo", "xkcd:yellowgreen", "xkcd:chocolate", "xkcd:coral", "xkcd:brown"]
 
 
-function init(w, h)
+function init(w, h, ion=true)
    global plt, ax
    global WIDTH, HEIGHT
 
    plt.pygui(true)
-   plt.ion()
+   if ion
+       plt.ion()
+   end
+
    plt.clf()
    #plt.xkcd() # uncomment for generalized wobbliness
    ax = plt.gca() # get current axes
@@ -70,6 +73,12 @@ function commit()
    plt.draw()
 end
 
+function savefig(filename)
+   global plt
+
+   plt.savefig(filename)
+end
+
 function arc(p::Tuple{Real, Real}, r, θ1, θ2, color)
    global ax
 
@@ -83,7 +92,7 @@ function circle(p::Tuple{Real, Real}, color, fill, r, l, zorder=1)
 end
 
 function point(p::Tuple{Real, Real}, color, fill)
-   circle(p, color, fill, 0.5, 1)
+   circle(p, color, fill, 0.005, 1)
 end
 
 function circle(p::Tuple{Real, Real}, color, r)
@@ -286,6 +295,15 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     #line((0, HEIGHT), (WIDTH, HEIGHT), "cyan")
 end
 
+function crossingPoint(center, dir, r)
+    vector = (dir[1] - center[1], dir[2] - center[2])
+    n = sqrt(vector[1]^2 + vector[2]^2) 
+    unitVector = (vector[1]/n, vector[2]/n)
+    crossingPoint = (center[1] + r * unitVector[1], center[2] + r * unitVector[2])
+    
+    return crossingPoint
+end
+
 function coveringSection(section::Covering.Section, r::Real)
     center = section.center
 
@@ -298,8 +316,12 @@ function coveringSection(section::Covering.Section, r::Real)
             Covering.radianToDegrees(Covering.segmentAngle(center, el.origin)),
             Covering.radianToDegrees(Covering.segmentAngle(center, el.next.origin)),
             "xkcd:tomato")
+        #cp = crossingPoint(center, el.origin, r)
+        #line(cp, center, "xkcd:green")
+        #line(cp, el.origin, "xkcd:pale green")
     else
         line(el.origin, el.next.origin, "xkcd:tan")
+        #line(el.origin, center, "xkcd:green")
     end
 
     while (el != section.borderHead)
@@ -310,8 +332,13 @@ function coveringSection(section::Covering.Section, r::Real)
                 Covering.radianToDegrees(Covering.segmentAngle(center, el.origin)),
                 Covering.radianToDegrees(Covering.segmentAngle(center, el.next.origin)),
                 "xkcd:tomato")
+
+            #cp = crossingPoint(center, el.origin, r)
+            #line(cp, center, "xkcd:green")
+            #line(cp, el.origin, "xkcd:pale green")
         else
             line(el.origin, el.next.origin, "xkcd:tan")
+            #line(el.origin, center, "xkcd:green")
         end
         for p in Covering.Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 
                                                                           Voronoi.Diagram.HalfEdge(el.next.origin, false, nothing, nothing, nothing, center),

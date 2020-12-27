@@ -139,10 +139,10 @@ end
 
 function voronoiDiagramToPartition(V::Voronoi.Diagram.DCEL, r::Real)
     n = length(V.regions)
-    sections = Array{Covering.Section, 1}(undef, n)
+    sections = Array{Section, 1}(undef, n)
 
     for i in 1:n
-        sections[i] = Covering.voronoiRegionToCoveringSection(V.regions[i], r)
+        sections[i] = voronoiRegionToCoveringSection(V.regions[i], r)
     end
 
     return Partition(sections, r)
@@ -160,9 +160,9 @@ function segmentAngle(p, q)
     elseif num == 0 && den < 0
         angle = π
     elseif den == 0 && num > 0
-        angle = pi/2
+        angle = π/2
     elseif den == 0 && num < 0
-        angle = 3pi/2
+        angle = 3π/2
     elseif num > 0 && den > 0
         angle = atan(num/den)
     elseif num > 0 && den < 0
