@@ -9,6 +9,27 @@ include("Algencan/AlgencanWrapper.jl")
 import Voronoi
 import Covering
 
+if drawing
+    import Draw
+
+    function draw(WIDTH, HEIGHT, r, points, n)
+        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
+        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
+        P = Covering.voronoiDiagramToPartition(V, r)
+        area, gᵣ, gₛ = Covering.areaAndGradient(P)
+
+        Draw.init(WIDTH, HEIGHT, false)
+        Draw.voronoiDiagram(V)
+        Draw.coveringPartition(P)
+        Draw.savefig("bateria/" * string(n) * ".png")
+    end
+end
+
+function randf(start, finish, n)
+    v = rand(n)
+    return map(x -> start + x*(finish-start), v)
+end
+
 #function avoidRepeats(points)
 #    println("LÁ VAMOS NÓS")
 #    println("points antes: ", points)
@@ -30,8 +51,11 @@ import Covering
 #    println("repeats depois: ", repeat)
 #    return points, repeat
 #end
-
+#
 function coverWithCircles(n, WIDTH, HEIGHT, r, points)
+   W = WIDTH
+   H = HEIGHT
+
    function pack(r, points)
        x = zeros(2n + 1)
        x[1] = r
@@ -55,35 +79,20 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        return r, points
    end
 
-   function draw(r, points)
-       if !drawing
-           return
-       end
-
-       V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
-       Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       P = Covering.voronoiDiagramToPartition(V, r)
-       area, gᵣ, gₛ = Covering.areaAndGradient(P)
-
-       Draw.init(WIDTH, HEIGHT)
-       Draw.voronoiDiagram(V)
-       Draw.coveringPartition(P)
-       Draw.commit()
-       print("")
-   end
-
    function f(x)
        r, points = unpack(x)
 
        if drawing && drawingAll
-           draw(r, points)
+           draw(W, H, r, points)
        end
+
        return r
    end
 
    function ∇f(x)
        grad = zeros(2n + 1)
        grad[1] = 1
+
        return grad
    end
 
@@ -95,6 +104,8 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        r, points = unpack(x)
 
        #points, repeats = avoidRepeats(points)
+
+       #println("CALCULANDO C DE ", r, ", ", points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
@@ -108,6 +119,8 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        r, points = unpack(x)
 
        #points, repeats = avoidRepeats(points)
+
+       #println("CALCULANDO C DE ", r, ", ", points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
@@ -148,21 +161,10 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
                                         #checkder = 1,
                                         epsopt = 1.0e-8,
                                         epsfeas = 1.0e-8
-                                        )
-
+                                       )
        r, points = unpack(x)
-       draw(r, points)
-       println("\n\n=================\nRESULTADO\n=================\n")
-       println("r = ", r)
-       println("s = ", 1/r)
-       println("pontos: ")
-       for p in points
-           println("(", p[1], ", ", p[2], ")")
-       end
-       if drawing
-           println("Digite ENTER para sair.")
-           readline(stdin)
-       end
+
+       return r, points
    catch exc
        println("Exception: ", exc)
        return 1e10, []
@@ -176,27 +178,41 @@ end
 
 
 
-if length(ARGS) == 0
-    println("USO: cover.sh N_DE_PONTOS [DESENHAR]")
-else
-    if drawing
-        import Draw
-    end
 
+function main()
+    n = tryparse(Int64, ARGS[1])
     WIDTH = 1.0
     HEIGHT = 1.0
 
-    n = tryparse(Int64, ARGS[1])
-    r = 0.1
+    rmin = 1e10
+    pointsmin = []
 
-    function randf(start, finish, n)
-        v = rand(n)
-        return map(x -> start + x*(finish-start), v)
+    for k in 1:100
+        points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
+        r = randf(0.5, 1.5, 1)[1]
+
+        r, points = coverWithCircles(n, WIDTH, HEIGHT, r, points)
+
+        if r < rmin
+            rmin = r
+            pointsmin = points
+        end
     end
 
-    #Random.seed!(1)
-    points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
+    sleep(5)
+    println("\n\n=================\nRESULTADO (n = " * string(n) * ")\n=================\n")
+    println("r = ", rmin)
+    println("s = ", 1/rmin)
+    println("pontos: ")
+    for p in pointsmin
+        println("(", p[1], ", ", p[2], ")")
+    end
+    println("")
 
-    coverWithCircles(n, WIDTH, HEIGHT, r, points)
+    if drawing
+        draw(WIDTH, HEIGHT, rmin, pointsmin, n)
+        #readline(stdin)
+    end
 end
 
+main()
