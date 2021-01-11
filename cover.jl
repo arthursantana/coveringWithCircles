@@ -1,13 +1,24 @@
-drawing = (haskey(ENV, "DRAW") && ENV["DRAW"] != "" && ENV["DRAW"] != "0")
-drawingAll = false
-
 using Random
 using Printf
 
 include("Algencan/AlgencanWrapper.jl")
+include("sh.jl")
 
 import Voronoi
 import Covering
+
+drawing = (haskey(ENV, "DRAW") && ENV["DRAW"] != "" && ENV["DRAW"] != "0")
+drawingAll = (haskey(ENV, "DRAWALL") && ENV["DRAWALL"] != "" && ENV["DRAWALL"] != "0")
+
+WIDTH = 1.0
+HEIGHT = 1.0
+
+A = Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                 (0, 0.125),
+                                 (0.75, 0.5),
+                                 (1 ,0.875),
+                                 (0.25, 0.5),
+                                ]))
 
 #function avoidRepeats(points)
 #    println("LÁ VAMOS NÓS")
@@ -62,12 +73,11 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       P = Covering.voronoiDiagramToPartition(V, r)
-       area, gᵣ, gₛ = Covering.areaAndGradient(P)
+       W = SH.intersect(V, A, r)
 
        Draw.init(WIDTH, HEIGHT)
-       Draw.voronoiDiagram(V)
-       Draw.coveringPartition(P)
+       Draw.coveringPartition(W, "xkcd:pink")
+       Draw.coveringSection(A, 0, "xkcd:black")
        Draw.commit()
        print("")
    end
@@ -152,6 +162,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        r, points = unpack(x)
        draw(r, points)
+
        println("\n\n=================\nRESULTADO\n=================\n")
        println("r = ", r)
        println("s = ", 1/r)
@@ -182,9 +193,6 @@ else
     if drawing
         import Draw
     end
-
-    WIDTH = 1.0
-    HEIGHT = 1.0
 
     n = tryparse(Int64, ARGS[1])
     r = 0.1

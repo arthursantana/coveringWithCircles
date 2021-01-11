@@ -22,23 +22,6 @@ colors = ["white"]
 #colors = ["xkcd:grey", "xkcd:crimson", "xkcd:gold", "xkcd:green", "xkcd:azure", "xkcd:beige", "xkcd:silver", "xkcd:lavender", "xkcd:lightgreen", "xkcd:magenta", "xkcd:ivory", "xkcd:maroon", "xkcd:orange", "xkcd:orangered", "xkcd:orchid", "xkcd:pink", "xkcd:plum", "xkcd:gold", "xkcd:salmon", "xkcd:sienna", "xkcd:lime", "xkcd:tan", "xkcd:tomato", "xkcd:violet", "xkcd:wheat", "xkcd:indigo", "xkcd:yellowgreen", "xkcd:chocolate", "xkcd:coral", "xkcd:brown"]
 
 
-function init(w, h, ion=true)
-   global plt, ax
-   global WIDTH, HEIGHT
-
-   plt.pygui(true)
-   if ion
-       plt.ion()
-   end
-
-   plt.clf()
-   #plt.xkcd() # uncomment for generalized wobbliness
-   ax = plt.gca() # get current axes
-
-   WIDTH = w
-   HEIGHT = h
-end
-
 function clear(title::String)
    global plt, ax
    global WIDTH, HEIGHT, FRAME
@@ -58,6 +41,25 @@ function clear(title::String)
       ax.get_yaxis().set_visible(true)
    end
 end
+
+function init(w, h, ion=true)
+   global plt, ax
+   global WIDTH, HEIGHT
+
+   plt.pygui(true)
+   if ion
+       plt.ion()
+   end
+
+   plt.clf()
+   #plt.xkcd() # uncomment for generalized wobbliness
+   ax = plt.gca() # get current axes
+
+   WIDTH = w
+   HEIGHT = h
+   clear("")
+end
+
 
 function legend(xlabel, ylabel)
    global plt
@@ -144,45 +146,6 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
    # calculate parabolas and breakpoints
 	beachLineFoci = Voronoi.BeachLine.beachLine(T, ly)
 
-   ### DEBUGGING SECTION
-   #Voronoi.BeachLine.printTree(T)
-   #println(beachLineFoci)
-
-   ## print x foci of beach line, without breakpoints
-   #i = 1
-   #while i <= size(beachLineFoci)[1]
-   #   print(beachLineFoci[i][1], " ")
-   #   i += 2
-   #end
-   #println()
-
-   ## print forward list of beachline arcs x's
-   #a = T.root
-   #if a != nothing
-   #   while !isa(a, Voronoi.BeachLine.Arc)
-   #      a = a.leftChild
-   #   end
-   #   while a != nothing
-   #      print(a.focus[1], " ")
-   #      a = a.next
-   #   end
-   #end
-   #println()
-
-   ## print backwards list of beachline arcs x's
-   #a = T.root
-   #if a != nothing
-   #   while !isa(a, Voronoi.BeachLine.Arc)
-   #      a = a.rightChild
-   #   end
-   #   while a != nothing
-   #      print(a.focus[1], " ")
-   #      a = a.prev
-   #   end
-   #end
-   #println()
-   ### DEBUGGING SECTION END
-
    # draw beachline
    start = (0, HEIGHT)
    i = 2
@@ -257,7 +220,6 @@ end
 function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     global WIDTH, HEIGHT
 
-    #clear("Computing Centroidal Voronoi Tesselations using Lloyd's Algorithm")
 	clear("")
 
     regions = Voronoi.Diagram.regionBorders(V)
@@ -266,8 +228,6 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     i = 1
     for region in regions
         if size(region[1])[1] > 0
-            #color = (V.regions[i].generator[1]/WIDTH, V.regions[i].generator[2]/HEIGHT, 0.5)
-            #ax.fill(region[1], region[2], color=color)
             ax.fill(region[1], region[2], colors[(i % size(colors)[1])+ 1])
         end
         i += 1
@@ -288,11 +248,6 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     for r in V.regions
         point(r.generator, "xkcd:black", true)
     end
-
-    #line((0, 0), (0, HEIGHT), "cyan")
-    #line((0, 0), (WIDTH, 0), "cyan")
-    #line((WIDTH, 0), (WIDTH, HEIGHT), "cyan")
-    #line((0, HEIGHT), (WIDTH, HEIGHT), "cyan")
 end
 
 function crossingPoint(center, dir, r)
@@ -304,7 +259,11 @@ function crossingPoint(center, dir, r)
     return crossingPoint
 end
 
-function coveringSection(section::Covering.Section, r::Real)
+function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
+    if section.borderHead == nothing
+        return
+    end
+
     center = section.center
 
     circle(center, "xkcd:gray", false, r, 1)
@@ -320,7 +279,7 @@ function coveringSection(section::Covering.Section, r::Real)
         #line(cp, center, "xkcd:green")
         #line(cp, el.origin, "xkcd:pale green")
     else
-        line(el.origin, el.next.origin, "xkcd:tan")
+        line(el.origin, el.next.origin, color)
         #line(el.origin, center, "xkcd:green")
     end
 
@@ -337,7 +296,7 @@ function coveringSection(section::Covering.Section, r::Real)
             #line(cp, center, "xkcd:green")
             #line(cp, el.origin, "xkcd:pale green")
         else
-            line(el.origin, el.next.origin, "xkcd:tan")
+            line(el.origin, el.next.origin, color)
             #line(el.origin, center, "xkcd:green")
         end
         for p in Covering.Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 
@@ -348,9 +307,9 @@ function coveringSection(section::Covering.Section, r::Real)
     end
 end
 
-function coveringPartition(P::Covering.Partition)
+function coveringPartition(P::Covering.Partition, color="xkcd:tan")
     for section in P.sections
-        Draw.coveringSection(section, P.r)
+        Draw.coveringSection(section, P.r, color)
     end
 end
 

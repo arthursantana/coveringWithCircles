@@ -41,107 +41,24 @@
  Output filename        =       'algencan.out'
  Solution filename      =                   ''
 
- Number of variables               :      21
+ Number of variables               :      31
  Number of equality constraints    :       1
  Number of inequality constraints  :       0
- Number of bound constraints       :      42
+ Number of bound constraints       :      62
  Number of fixed variables         :       0
 
  There are no fixed variables to be removed.
 
  Objective function scale factor   : 1.0D+00
- Smallest constraints scale factor : 3.7D-01
+ Smallest constraints scale factor : 1.5D-01
 
  Entry to ALGENCAN.
- Number of variables  :      21
+ Number of variables  :      31
  Number of constraints:       1
 
 out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
 ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
-  0         1.000D-01 8.D-01  1.000D-01 3.D-01 3.D-01 1.D-01 3.D-01    0   0   0
-  1 1.D+01  2.094D-01 1.D-01  2.094D-01 5.D-02 5.D-02 8.D-02 9.D-02   10C  0   0
-  2 1.D+01  1.884D-01 6.D-02  1.884D-01 2.D-02 2.D-02 5.D-05 3.D-02   67C  0   0
-  3 1.D+01  1.931D-01 4.D-02  1.931D-01 2.D-02 2.D-02 2.D-05 2.D-02   87C  0   0
-  4 1.D+02  2.051D-01 1.D-02  2.051D-01 5.D-03 5.D-03 1.D-04 4.D-03  136C  0   0
-  5 1.D+02  2.079D-01 1.D-02  2.079D-01 4.D-03 4.D-03 1.D-04 2.D-03  165C  0   0
-  6 1.D+03  2.132D-01 4.D-03  2.132D-01 1.D-03 1.D-03 5.D-05 4.D-04  195C  0   0
-  7 1.D+03  2.150D-01 2.D-03  2.150D-01 9.D-04 9.D-04 5.D-05 2.D-04  219C  0   0
-  8 1.D+04  2.179D-01 8.D-04  2.179D-01 3.D-04 3.D-04 6.D-05 4.D-05  247C  0   0
-  9 1.D+04  2.187D-01 5.D-04  2.187D-01 2.D-04 2.D-04 9.D-05 2.D-05  267C  0   0
-
-out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
-ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
- 10 1.D+05  2.201D-01 2.D-04  2.201D-01 6.D-05 6.D-05 9.D-05 4.D-06  307C  0   0
- 11 1.D+05  2.205D-01 1.D-04  2.205D-01 4.D-05 4.D-05 4.D-06 2.D-06  372C  0   0
- 12 1.D+06  2.212D-01 4.D-05  2.212D-01 1.D-05 1.D-05 6.D-06 4.D-07  429P  0   0
- 13 1.D+06  2.214D-01 2.D-05  2.214D-01 9.D-06 9.D-06 3.D-06 2.D-07  510P  0   0
- 14 1.D+07  2.217D-01 8.D-06  2.217D-01 3.D-06 3.D-06 8.D-06 4.D-08  596P  0   0
- 15 1.D+07  2.218D-01 5.D-06  2.218D-01 2.D-06 2.D-06 1.D-05 2.D-08  670P  0   0
- 16 1.D+08  2.219D-01 2.D-06  2.219D-01 7.D-07 7.D-07 1.D-04 4.D-09  767P  0   0
- 17 1.D+08  2.220D-01 1.D-06  2.220D-01 4.D-07 4.D-07 3.D-05 2.D-09  850P  0   0
- 18 1.D+09  2.220D-01 4.D-07  2.220D-01 1.D-07 1.D-07 1.D-04 4.D-10  930P  0   0
- 19 1.D+09  2.221D-01 2.D-07  2.221D-01 9.D-08 9.D-08 9.D-05 2.D-10  992P  0   0
-
-out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
-ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
- 20 1.D+10  2.221D-01 8.D-08  2.221D-01 3.D-08 3.D-08 3.D-05 4.D-11 1038P  0   0
- 21 1.D+10  2.221D-01 5.D-08  2.221D-01 2.D-08 2.D-08 2.D-04 2.D-11 1074P  0   0
- 22 1.D+11  2.221D-01 2.D-08  2.221D-01 7.D-09 7.D-09 1.D-04 4.D-12 1117P  0   0
- 23 1.D+11  2.221D-01 1.D-08  2.221D-01 4.D-09 4.D-09 1.D-04 2.D-12 1147P  0   0
- 24 1.D+12  2.221D-01 4.D-09  2.221D-01 1.D-09 1.D-09 7.D-05 4.D-13 1182P  0   0
- 25 1.D+12  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1206P  0   0
- 26 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 3.D-04 2.D-13 1212P  0   0
- 27 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 6.D-05 2.D-13 1222P  0   0
- 28 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 2.D-04 2.D-13 1229P  0   0
- 29 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 5.D-04 2.D-13 1235P  0   0
-
-out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
-ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
- 30 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 2.D-04 2.D-13 1241P  0   0
- 31 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 7.D-05 2.D-13 1246P  0   0
- 32 1.D+01  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 8.D-04 2.D-13 1260P  0   0
- 33 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 4.D-05 2.D-13 1268P  0   0
- 34 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 6.D-04 2.D-13 1285P  0   0
- 35 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 4.D-05 2.D-13 1293P  0   0
- 36 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1296P  0   0
- 37 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1300P  0   0
- 38 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1305P  0   0
- 39 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 9.D-05 2.D-13 1311P  0   0
-
-out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
-ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
- 40 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1320P  0   0
- 41 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 4.D-04 2.D-13 1326P  0   0
- 42 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 7.D-05 2.D-13 1339P  0   0
- 43 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1346P  0   0
- 44 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1351P  0   0
- 45 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1359P  0   0
- 46 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 1.D-04 2.D-13 1365P  0   0
- 47 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 8.D-05 2.D-13 1372P  0   0
- 48 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 8.D-05 2.D-13 1376P  0   0
- 49 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 7.D-05 2.D-13 1383P  0   0
-
-out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
-ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
- 50 1.D+00  2.221D-01 2.D-09  2.221D-01 9.D-10 9.D-10 2.D-04 2.D-13 1388P  0   0
-
- Flag of ALGENCAN: Maximum of iterations reached. The feasibility-
- complementarity and optimality tolerances could not be achieved. Whether the
- final iterate is a solution or not requires further analysis.
-
- User-provided subroutines calls counters: 
-
- Subroutine fsub     (coded=T):     3212
- Subroutine gsub     (coded=T):     1648
- Subroutine hsub     (coded=T):        0
- Subroutine csub     (coded=T):     3370 (    3370 calls per constraint in avg)
- Subroutine jacsub   (coded=T):     1699 (    1699 calls per constraint in avg)
- Subroutine hcsub    (coded=F):        0 (       0 calls per constraint in avg)
- Subroutine fcsub    (coded=F):        0
- Subroutine gjacsub  (coded=F):        0
- Subroutine gjacpsub (coded=F):        0
- Subroutine hlsub    (coded=F):        0
- Subroutine hlpsub   (coded=F):        0
-
-
- Total CPU time in seconds =     5.87
+  0         1.000D-01 6.D-01  1.000D-01 9.D-02 9.D-02 1.D-01 9.D-02    0   0   0
+  1 1.D+01  1.107D-01 4.D-01  1.107D-01 7.D-02 7.D-02 2.D-02 1.D-01   10C  0   0
+  2 1.D+01  1.374D-01 1.D-01  1.374D-01 2.D-02 2.D-02 9.D-05 3.D-02   64C  0   0
+  3 1.D+01  1.418D-01 1.D-01  1.418D-01 2.D-02 2.D-02 8.D-05 2.D-02   82C  0   0

@@ -19,13 +19,44 @@ mutable struct Section
    borderHead::Union{Element, Nothing}
 end
 
+function Section(points::Array{Tuple{Real, Real}, 1})
+    n = size(points)[1]
+
+    edge = head = Edge(points[1], nothing)
+
+    for i in 2:n
+        edge.next = Edge(points[i], nothing)
+        edge = edge.next
+    end
+
+    edge.next = head
+
+    return Section((0, 0), head)
+end
+
+function Section(section::Section)
+    edge = head = Edge(section.borderHead.origin, nothing)
+
+    copying = section.borderHead.next
+    while copying != section.borderHead
+        edge.next = Edge(copying.origin, nothing)
+        edge = edge.next
+        copying = copying.next
+    end
+
+    edge.next = head
+
+    return Section((0, 0), head)
+end
+
 function segmentArcIntersections(segment::Voronoi.Diagram.HalfEdge, center::Tuple{Real, Real}, r::Real)
+    return segmentArcIntersections(segment.origin, segment.next.origin, center, r)
+end
+
+function segmentArcIntersections(p::Tuple{Real, Real}, q::Tuple{Real, Real}, center::Tuple{Real, Real}, r::Real)
     function dot(a, b)
         return a[1]*b[1] + a[2]*b[2]
     end
-
-    p = segment.origin
-    q = segment.next.origin
 
     PQ = Voronoi.Geometry.subVector(q, p)
     CP = Voronoi.Geometry.subVector(p, center)
