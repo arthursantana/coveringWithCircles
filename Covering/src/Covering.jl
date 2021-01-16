@@ -208,6 +208,10 @@ function segmentAngle(p, q)
 end
 
 function areaAndGradient(section::Section, r::Real)
+    if section.borderHead == nothing
+        return 0, 0, (0, 0)
+    end
+
     totalArea = 0
     el = section.borderHead
     gᵣ = 0

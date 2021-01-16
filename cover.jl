@@ -108,8 +108,8 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       P = Covering.voronoiDiagramToPartition(V, r)
-       covered_area, gᵣ, gₛ = Covering.areaAndGradient(P)
+       W = SH.intersect(V, A, r)
+       covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
 
        return WIDTH*HEIGHT - covered_area
    end
@@ -121,8 +121,8 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       P = Covering.voronoiDiagramToPartition(V, r)
-       area, gᵣ, gₛ = Covering.areaAndGradient(P)
+       W = SH.intersect(V, A, r)
+       covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
 
        #for i in repeats
        #    push!(gₛ, (0, 0))
@@ -205,6 +205,10 @@ else
     #Random.seed!(1)
     points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
 
-    coverWithCircles(n, WIDTH, HEIGHT, r, points)
+    try
+        coverWithCircles(n, WIDTH, HEIGHT, r, points)
+    catch e
+        @error "Deu pau:" exception=(e, catch_backtrace())
+    end
 end
 
