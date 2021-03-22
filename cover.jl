@@ -13,12 +13,43 @@ drawingAll = (haskey(ENV, "DRAWALL") && ENV["DRAWALL"] != "" && ENV["DRAWALL"] !
 WIDTH = 1.0
 HEIGHT = 1.0
 
-A = Covering.Section(Array{Tuple{Real, Real}, 1}([
-                                 (0, 0.125),
-                                 (0.75, 0.5),
-                                 (1 ,0.875),
-                                 (0.25, 0.5),
-                                ]))
+A = Array{Covering.Section, 1}([
+        Covering.Section(Array{Tuple{Real, Real}, 1}([
+            (0.2, 0.5),
+            (0.8, 0.5),
+            (0.8, 0.75),
+            (0.2, 0.75),
+        ])),
+        Covering.Section(Array{Tuple{Real, Real}, 1}([
+            (0.4, 0.5),
+            (0.4, 0.25),
+            (0.6, 0.25),
+            (0.6, 0.5),
+        ]))
+    ])
+#A = Array{Covering.Section, 1}([
+#        Covering.Section(Array{Tuple{Real, Real}, 1}([
+#            (0, 0.125),
+#            (0.75, 0.5),
+#            (1 ,0.875),
+#            (0.25, 0.5),
+#        ])),
+#        Covering.Section(Array{Tuple{Real, Real}, 1}([
+#            (0, 1),
+#            (0, 0.5),
+#            (0.5, 1),
+#        ]))
+#    ])
+
+function f()
+    total_area = 0
+    for Aⱼ in A
+        t, _, _ = Covering.areaAndGradient(Aⱼ, 0)
+        total_area += t
+    end
+    return total_area
+end
+total_area = f()
 
 #function avoidRepeats(points)
 #    println("LÁ VAMOS NÓS")
@@ -73,11 +104,16 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       W = SH.intersect(V, A, r)
 
        Draw.init(WIDTH, HEIGHT)
-       Draw.coveringPartition(W, "xkcd:pink")
-       Draw.coveringSection(A, 0, "xkcd:black")
+       Draw.circles(r, points)
+
+       for Aⱼ in A
+           W = SH.intersect(V, Aⱼ, r)
+           Draw.coveringPartition(W, "xkcd:pink")
+           Draw.coveringSection(Aⱼ, 0, "xkcd:black")
+       end
+
        Draw.commit()
        print("")
    end
@@ -94,6 +130,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
    function ∇f(x)
        grad = zeros(2n + 1)
        grad[1] = 1
+       #println("GRAD: ", grad)
        return grad
    end
 
@@ -108,10 +145,15 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       W = SH.intersect(V, A, r)
-       covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
 
-       return WIDTH*HEIGHT - covered_area
+       uncovered_area = total_area
+       for Aⱼ in A
+           W = SH.intersect(V, Aⱼ, r)
+           area, _, _ = Covering.areaAndGradient(W)
+           uncovered_area -= area
+       end
+
+       return uncovered_area
    end
 
    function ∇c(ind, x)
@@ -121,12 +163,29 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       W = SH.intersect(V, A, r)
-       covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
+
+       gᵣ = 0
+       gₛ = fill((0.0, 0.0), n)
+       for Aⱼ in A
+           W = SH.intersect(V, Aⱼ, r)
+           _, gᵣⱼ, gₛⱼ = Covering.areaAndGradient(W)
+           gᵣ += gᵣⱼ
+           for i in 1:n
+               g1 = gₛ[i][1]
+               g1 += gₛⱼ[i][1]
+
+               g2 = gₛ[i][2]
+               g2 += gₛⱼ[i][2]
+               gₛ[i] = (g1, g2)
+           end
+       end
 
        #for i in repeats
        #    push!(gₛ, (0, 0))
        #end
+       #println("GRAD C.: ", pack(gᵣ, gₛ))
+       #println("Aperte Enter pra continuar")
+       #readline(stdin)
 
        return collect(1:2n+1), pack(gᵣ, gₛ)
    end
@@ -139,6 +198,10 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
    for i in 2:2n+1
        u[i] = 1.0
    end
+
+   draw(r, points)
+   println("Aperte Enter pra continuar")
+   readline(stdin)
 
    try
        x, fx = AlgencanWrapper.optimize(n = 2n + 1, m = 1,
@@ -156,8 +219,8 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
                                                   "ITERATIONS-OUTPUT-DETAIL 10",
                                                  ],
                                         #checkder = 1,
-                                        epsopt = 1.0e-8,
-                                        epsfeas = 1.0e-8
+                                        epsopt = 1.0e-6,
+                                        epsfeas = 1.0e-6
                                         )
 
        r, points = unpack(x)
@@ -195,15 +258,64 @@ else
     end
 
     n = tryparse(Int64, ARGS[1])
-    r = 0.1
 
     function randf(start, finish, n)
         v = rand(n)
         return map(x -> start + x*(finish-start), v)
     end
 
-    #Random.seed!(1)
+    #Random.seed!(10)
+
     points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
+
+    r = (0.5 + (rand(1)[1]))/n
+
+    function insideHalfSpace(point, p, q)
+        pq = Voronoi.Geometry.subVector(q, p)
+        v = Voronoi.Geometry.rotateVectorCCW(pq)
+
+        function dot(a, b)
+            return a[1]*b[1] + a[2]*b[2]
+        end
+
+        u = Voronoi.Geometry.subVector(point, p)
+
+        return (dot(u, v) >= 0)
+    end
+
+    function pointIsInsideConvexPolygon(point, polygon)
+        p = polygon.borderHead
+
+        first = true
+        while p != polygon.borderHead || first
+            first = false
+            q = p.next
+            if !insideHalfSpace(point, p.origin, q.origin)
+                return false
+            end
+
+            p = p.next
+        end
+
+        return true
+    end
+
+    function pointIsInsideSomeConvexPolygon(point, polygons)
+        for polygon in polygons
+            if pointIsInsideConvexPolygon(point, polygon)
+                return true
+            end
+        end
+
+        return false
+    end
+
+    for (i, p) in enumerate(points)
+        while !pointIsInsideSomeConvexPolygon(points[i], A)
+            println("Ponto $i ainda está fora. Re-sorteando.")
+            points[i] = (randf(1, WIDTH-1, 1)[1], randf(1, HEIGHT-1, 1)[1])
+        end
+    end
 
     try
         coverWithCircles(n, WIDTH, HEIGHT, r, points)

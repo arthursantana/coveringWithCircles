@@ -11,6 +11,9 @@ end
 import Voronoi
 import Covering
 
+TIKZ = true
+MATPLOTLIB = true
+
 
 plt = PyPlot
 ax = nothing
@@ -43,21 +46,31 @@ function clear(title::String)
 end
 
 function init(w, h, ion=true)
-   global plt, ax
-   global WIDTH, HEIGHT
+    if TIKZ
+        println()
+        println("Tikzando...")
+        println()
 
-   plt.pygui(true)
-   if ion
-       plt.ion()
-   end
+        println("\\begin{tikzpicture}[thick, scale=10]")
+    end
 
-   plt.clf()
-   #plt.xkcd() # uncomment for generalized wobbliness
-   ax = plt.gca() # get current axes
+    if MATPLOTLIB
+        global plt, ax
+        global WIDTH, HEIGHT
 
-   WIDTH = w
-   HEIGHT = h
-   clear("")
+        plt.pygui(true)
+        if ion
+            plt.ion()
+        end
+
+        plt.clf()
+        #plt.xkcd() # uncomment for generalized wobbliness
+        ax = plt.gca() # get current axes
+
+        WIDTH = w
+        HEIGHT = h
+        clear("")
+    end
 end
 
 
@@ -70,9 +83,18 @@ function legend(xlabel, ylabel)
 end
 
 function commit()
-   global plt
+    if TIKZ
+        println("\\end{tikzpicture}")
+        println()
+        println("Tikzou.")
+        println()
+    end
 
-   plt.draw()
+    if MATPLOTLIB
+        global plt
+
+        plt.draw()
+    end
 end
 
 function savefig(filename)
@@ -82,19 +104,41 @@ function savefig(filename)
 end
 
 function arc(p::Tuple{Real, Real}, r, θ1, θ2, color)
-   global ax
+    if TIKZ
+        t1 = 2π*θ1/360
+        x = p[1] + r*cos(t1)
+        y = p[2] + r*sin(t1)
 
-   ax.add_artist(patch.Arc((p[1], p[2]), 2r, 2r, 0, θ1, θ2, color=color, linewidth=3, zorder=1))
+        if θ2 < θ1
+            θ2 += 360
+        end
+        println("\\draw[$color] ($(x), $(y)) arc ($(θ1):$(θ2):$(r)cm);")
+    end
+
+    if MATPLOTLIB
+        global ax
+
+        ax.add_artist(patch.Arc((p[1], p[2]), 2r, 2r, 0, θ1, θ2, color=color, linewidth=3, zorder=1))
+    end
 end
 
 function circle(p::Tuple{Real, Real}, color, fill, r, l, zorder=1)
-   global ax
+    if TIKZ
+        println("\\draw[$color] ($(p[1]), $(p[2])) circle ($(r)cm);")
+        if fill
+            println("\\fill[$color] ($(p[1]), $(p[2])) circle ($(r)cm);")
+        end
+    end
 
-   ax.add_artist(patch.Circle((p[1], p[2]), color=color, radius=r, fill=fill, zorder=zorder, linewidth=l))
+    if MATPLOTLIB
+        global ax
+
+        ax.add_artist(patch.Circle((p[1], p[2]), color=color, radius=r, fill=fill, zorder=zorder, linewidth=l))
+    end
 end
 
 function point(p::Tuple{Real, Real}, color, fill)
-   circle(p, color, fill, 0.005, 1)
+    circle(p, color, fill, 0.005, 1)
 end
 
 function circle(p::Tuple{Real, Real}, color, r)
@@ -102,9 +146,15 @@ function circle(p::Tuple{Real, Real}, color, r)
 end
 
 function line(p1::Tuple{Real, Real}, p2::Tuple{Real, Real}, color)
-   global plt
+    if TIKZ
+        println("\\draw[$color] ($(p1[1]), $(p1[2])) -- ($(p2[1]), $(p2[2]));")
+    end
 
-   plt.plot([p1[1], p2[1]], [p1[2], p2[2]], color=color, linestyle="-", linewidth=3, zorder=1)
+    if MATPLOTLIB
+        global plt
+
+        plt.plot([p1[1], p2[1]], [p1[2], p2[2]], color=color, linestyle="-", linewidth=3, zorder=1)
+    end
 end
 
 function thinLine(p1::Tuple{Real, Real}, p2::Tuple{Real, Real}, color)
@@ -163,7 +213,6 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
          if start == nothing # special case where there the first couple of points are on the same y coordinate
          else
             Draw.line((p[1], ly), (p[1], start[2]), "xkcd:azure")
-            #Draw.line((p[1], ly), (p[1], start[2]), "xkcd:black")
          end
 		else
          if 0 <= start[1]
@@ -179,7 +228,6 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
          end
 
 			plot(f, "xkcd:azure", st, fn)
-			#plot(f, "xkcd:black", st, fn)
 		end
 
       start = finish
@@ -213,7 +261,6 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
 
    # draw sweepline
 	line((0, ly), (WIDTH, ly), "xkcd:gold")
-	#line((0, ly), (WIDTH, ly), "xkcd:black")
 	commit()
 end
 
@@ -259,6 +306,13 @@ function crossingPoint(center, dir, r)
     return crossingPoint
 end
 
+function circles(r::Real, points)
+    for center in points
+        circle(center, "xkcd:gray", false, r, 1)
+        point(center, "xkcd:black", true)
+    end
+end
+
 function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
     if section.borderHead == nothing
         return
@@ -266,7 +320,7 @@ function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
 
     center = section.center
 
-    circle(center, "xkcd:gray", false, r, 1)
+    #circle(center, "xkcd:gray", false, r, 1)
 
     el = section.borderHead.next
     i = 0
@@ -279,7 +333,9 @@ function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
         #line(cp, center, "xkcd:green")
         #line(cp, el.origin, "xkcd:pale green")
     else
-        line(el.origin, el.next.origin, color)
+        if color !== nothing
+            line(el.origin, el.next.origin, color)
+        end
         #line(el.origin, center, "xkcd:green")
     end
 
@@ -296,7 +352,9 @@ function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
             #line(cp, center, "xkcd:green")
             #line(cp, el.origin, "xkcd:pale green")
         else
-            line(el.origin, el.next.origin, color)
+            if color !== nothing
+                line(el.origin, el.next.origin, color)
+            end
             #line(el.origin, center, "xkcd:green")
         end
         for p in Covering.Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 

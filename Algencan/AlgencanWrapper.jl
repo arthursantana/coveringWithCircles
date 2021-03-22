@@ -244,8 +244,8 @@ function optimize(;
 
                   outputfnm = "algencan.out",
                   specfnm = "",
-                  nvparam = 1,
-                  vparam = ["ITERATIONS-OUTPUT-DETAIL 10"]
+                  nvparam = 3,
+                  vparam = ["ITERATIONS-OUTPUT-DETAIL 10", "LARGEST-PENALTY-PARAMETER-ALLOWED 1.0e8", "OUTER-ITERATIONS-LIMIT 20"]
                  )
     myevalf = make_evalf(f)
     myevalg = make_evalg(g)
