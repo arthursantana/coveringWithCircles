@@ -211,6 +211,46 @@ function myevalhlp(n::Cint, x::Ptr{Cdouble}, m::Cint, lambda::Ptr{Cdouble}, scal
     return nothing
 end
 
+function optimizeVAZI(;
+                  n::Int=1,
+                  m::Int=0,
+                  f::Function,
+
+                  g::Union{Function, Nothing}=nothing,
+                  h::Union{Function, Nothing}=nothing,
+
+                  c::Union{Function, Nothing}=nothing,
+                  jac::Union{Function, Nothing}=nothing,
+                  hc::Union{Function, Nothing}=nothing,
+                  equatn::Union{Array{Int}, Nothing}=nothing,
+                  linear::Union{Array{Int}, Nothing}=nothing,
+
+                  x::Union{Array{Float64}, Nothing}=nothing,
+                  l::Union{Array{Float64}, Nothing}=nothing,
+                  u::Union{Array{Float64}, Nothing}=nothing,
+                  lambda::Union{Array{Float64}, Nothing}=nothing,
+
+                  jcnnzmax = 1e8,
+                  hnnzmax = 1e8,
+
+                  epsfeas = 1e-8,
+                  epsopt = 1e-8,
+                  efstain = sqrt(epsfeas),
+                  eostain = epsopt^1.5,
+                  efacc = sqrt(epsfeas),
+                  eoacc = sqrt(epsopt),
+
+                  checkder = 0,
+
+                  outputfnm = "algencan.out",
+                  specfnm = "",
+                  nvparam = 3,
+                  vparam = ["ITERATIONS-OUTPUT-DETAIL 10", "LARGEST-PENALTY-PARAMETER-ALLOWED 1.0e8", "OUTER-ITERATIONS-LIMIT 20"]
+                 )
+    println("FOI")
+    return [], []
+end
+
 function optimize(;
                   n::Int=1,
                   m::Int=0,
@@ -247,6 +287,7 @@ function optimize(;
                   nvparam = 3,
                   vparam = ["ITERATIONS-OUTPUT-DETAIL 10", "LARGEST-PENALTY-PARAMETER-ALLOWED 1.0e8", "OUTER-ITERATIONS-LIMIT 20"]
                  )
+
     myevalf = make_evalf(f)
     myevalg = make_evalg(g)
     myevalh = make_evalh(h)

@@ -6,9 +6,10 @@
  See http://www.ime.usp.br/~egbirgin/tango/ for details.
  ==============================================================================
 
- Processing array of parameters with   1 entrances:
+ Processing array of parameters with   2 entrances:
 
  ITERATIONS-OUTPUT-DETAIL                                                    10
+ PENALTY-PARAMETER-INITIAL-VALUE                                 1.00000000D+03
 
  The specification file is not being used.
 
@@ -41,23 +42,26 @@
  Output filename        =       'algencan.out'
  Solution filename      =                   ''
 
- Number of variables               :      21
+ Number of variables               :      39
  Number of equality constraints    :       1
  Number of inequality constraints  :       0
- Number of bound constraints       :      42
+ Number of bound constraints       :      77
  Number of fixed variables         :       0
 
  There are no fixed variables to be removed.
 
  Objective function scale factor   : 1.0D+00
- Smallest constraints scale factor : 1.0D+00
-
- Since the scaling factor(s) is(are) equal to one, scaling was inhibited.
+ Smallest constraints scale factor : 4.1D-01
 
  Entry to ALGENCAN.
- Number of variables  :      21
+ Number of variables  :      39
  Number of constraints:       1
 
-out penalt  objective infeas infeas norm   norm   |Grad|  inner Newton
-ite         function  ibilty +compl graLag point  infeas  totit forKKT
-  0         1.075D-01 3.D-02 3.D-02 1.D-01 8.D-01 3.D-02     0   0   0
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+  0         3.570D-02 1.D-01  3.570D-02 6.D-02 6.D-02 4.D-02 6.D-02    0   0   0
+  1 1.D+03  7.541D-02 8.D-03  7.541D-02 3.D-03 3.D-03 4.D-01 1.D-03   10C  0   0
+  2 1.D+03  7.169D-02 1.D-03  7.169D-02 6.D-04 6.D-04 8.D-04 2.D-04   91C  0   0
+  3 1.D+03  7.213D-02 1.D-03  7.213D-02 5.D-04 5.D-04 6.D-05 1.D-04  162C  0   0
+  4 1.D+04  7.348D-02 6.D-04  7.348D-02 2.D-04 2.D-04 5.D-06 4.D-05  288C  0   0
+  5 1.D+04  7.404D-02 4.D-04  7.404D-02 2.D-04 2.D-04 1.D-05 2.D-05  482P  0   0

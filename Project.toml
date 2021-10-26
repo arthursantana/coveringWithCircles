@@ -2,7 +2,7 @@
 Covering = "ee6302d9-777b-42db-b1c2-2d88f1e554c9"
 Draw = "b2ba35a9-edc6-41d4-89d4-54cd78fd0cc9"
 Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
-Optimization = "3f8c3205-3593-4a79-85eb-e831cff4a5cc"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Voronoi = "66662c87-25d6-4c1c-819b-3e05717c8b1e"

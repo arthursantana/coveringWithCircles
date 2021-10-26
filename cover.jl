@@ -27,6 +27,7 @@ A = Array{Covering.Section, 1}([
             (0.6, 0.5),
         ]))
     ])
+
 #A = Array{Covering.Section, 1}([
 #        Covering.Section(Array{Tuple{Real, Real}, 1}([
 #            (0, 0.125),
@@ -124,13 +125,15 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        if drawing && drawingAll
            draw(r, points)
        end
+
+       println("R: ", r)
        return r
    end
 
    function ∇f(x)
        grad = zeros(2n + 1)
        grad[1] = 1
-       #println("GRAD: ", grad)
+       println("GRAD: ", grad)
        return grad
    end
 
@@ -153,6 +156,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
            uncovered_area -= area
        end
 
+       println("C: ", uncovered_area)
        return uncovered_area
    end
 
@@ -171,19 +175,14 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
            _, gᵣⱼ, gₛⱼ = Covering.areaAndGradient(W)
            gᵣ += gᵣⱼ
            for i in 1:n
-               g1 = gₛ[i][1]
-               g1 += gₛⱼ[i][1]
-
-               g2 = gₛ[i][2]
-               g2 += gₛⱼ[i][2]
-               gₛ[i] = (g1, g2)
+               gₛ[i] = (gₛ[i][1] + gₛⱼ[i][1], gₛ[i][2] + gₛⱼ[i][2])
            end
        end
 
        #for i in repeats
        #    push!(gₛ, (0, 0))
        #end
-       #println("GRAD C.: ", pack(gᵣ, gₛ))
+       println("GRAD C.: ", pack(gᵣ, gₛ))
        #println("Aperte Enter pra continuar")
        #readline(stdin)
 
@@ -191,22 +190,22 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
    end
 
    l = zeros(2n + 1)
-   l[1] = 1e-6
+   l[1] = 1e-14
 
    u = zeros(2n + 1)
-   u[1] = 5.0
+   u[1] = 10e20
    for i in 2:2n+1
        u[i] = 1.0
    end
 
    draw(r, points)
-   println("Aperte Enter pra continuar")
-   readline(stdin)
+   #println("Aperte Enter pra continuar")
+   #readline(stdin)
 
    try
        x, fx = AlgencanWrapper.optimize(n = 2n + 1, m = 1,
 
-                                        f = f, g = ∇f, h = ∇∇f,
+                                        f = f, g = ∇f,# h = ∇∇f,
                                         equatn = [1],
                                         c = c, jac = ∇c,
 
@@ -214,9 +213,10 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
                                         l = l,
                                         u = u,
 
-                                        nvparam = 1,
+                                        nvparam = 2,
                                         vparam = [
                                                   "ITERATIONS-OUTPUT-DETAIL 10",
+                                                  "PENALTY-PARAMETER-INITIAL-VALUE 1000"
                                                  ],
                                         #checkder = 1,
                                         epsopt = 1.0e-6,
@@ -251,7 +251,7 @@ end
 
 
 if length(ARGS) == 0
-    println("USO: cover.sh N_DE_PONTOS [DESENHAR]")
+    println("USO: cover.sh N_DE_PONTOS [DESENHAR] [DESENHAR_TODA_AVALIAÇÃO]")
 else
     if drawing
         import Draw
@@ -264,8 +264,7 @@ else
         return map(x -> start + x*(finish-start), v)
     end
 
-    #Random.seed!(10)
-
+    Random.seed!(1)
     points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
 
     r = (0.5 + (rand(1)[1]))/n
@@ -312,7 +311,7 @@ else
 
     for (i, p) in enumerate(points)
         while !pointIsInsideSomeConvexPolygon(points[i], A)
-            println("Ponto $i ainda está fora. Re-sorteando.")
+            #println("Ponto $i ainda está fora. Re-sorteando.")
             points[i] = (randf(1, WIDTH-1, 1)[1], randf(1, HEIGHT-1, 1)[1])
         end
     end

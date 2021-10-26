@@ -212,7 +212,7 @@ function areaAndGradient(section::Section, r::Real)
         return 0, 0, (0, 0)
     end
 
-    totalArea = 0
+    coveredArea = 0
     el = section.borderHead
     gᵣ = 0
     gₛx = gₛy = 0.0
@@ -228,40 +228,39 @@ function areaAndGradient(section::Section, r::Real)
                 θ += 2π
             end
 
-            totalArea += θ*(r^2)/2 # (θ/(2π))*π*(r^2)
-            gᵣ += -r*θ # (θ/(2π))*2π*r
+            coveredArea += section.center[1]*r*(sin(θ2) - sin(θ1))
+            coveredArea += ((r^2)/2)*(θ + sin(θ2)*cos(θ2) - sin(θ1)*cos(θ1))
+
+            gᵣ += -r*θ # (θ/(2π))*2πr
             gₛx += r*(sin(θ1) - sin(θ2))
             gₛy += r*(cos(θ2) - cos(θ1))
         else # isa Edge
-            point = el
-            shoelace = 0
-            shoelace += el.origin[1]*el.next.origin[2] - el.origin[2]*el.next.origin[1]
-            shoelace += el.next.origin[1]*section.center[2] - el.next.origin[2]*section.center[1]
-            shoelace += section.center[1]*el.origin[2] - section.center[2]*el.origin[1]
+            v = el.origin
+            w = el.next.origin
 
-            totalArea += shoelace/2
+            coveredArea += (w[2] - v[2])*(v[1] + w[1])/2
         end
 
         el = el.next
     end
 
-    return totalArea, gᵣ, (gₛx, gₛy)
+    return coveredArea, gᵣ, (gₛx, gₛy)
 end
 
 function areaAndGradient(P::Partition)
     n = length(P.sections)
 
-    totalArea = gᵣ = 0
+    coveredArea = gᵣ = 0
     gₛ = fill((0.0, 0.0), n)
 
     for i in 1:n
         a, g_r, g_s_i = areaAndGradient(P.sections[i], P.r)
-        totalArea += a
+        coveredArea += a
         gᵣ += g_r
         gₛ[i] = g_s_i
     end
 
-    return totalArea, gᵣ, gₛ
+    return coveredArea, gᵣ, gₛ
 end
 
 end # module

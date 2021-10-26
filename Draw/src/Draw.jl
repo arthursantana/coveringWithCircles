@@ -11,7 +11,7 @@ end
 import Voronoi
 import Covering
 
-TIKZ = true
+TIKZ = false
 MATPLOTLIB = true
 
 
