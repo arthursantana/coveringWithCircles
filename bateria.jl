@@ -12,64 +12,99 @@ drawingAll = (haskey(ENV, "DRAWALL") && ENV["DRAWALL"] != "" && ENV["DRAWALL"] !
 
 WIDTH = 1.0
 HEIGHT = 1.0
+INSTANCE = 1
 
-A = Covering.Section(Array{Tuple{Real, Real}, 1}([
-                                 (0, 0.125),
-                                 (0.75, 0.5),
-                                 (1 ,0.875),
-                                 (0.25, 0.5),
-                                ]))
-total_area, _, _ = Covering.areaAndGradient(A, 0)
+As = [
+      Array{Covering.Section, 1}([
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.1, 0.1),
+                                                                                (0.9, 0.1),
+                                                                                (0.9, 0.9),
+                                                                                (0.1, 0.9),
+                                                                               ])),
+                                 ]),
+      Array{Covering.Section, 1}([
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.5, 0.5),
+                                                                                (0.4, 0.4),
+                                                                                (0.5, 0.1),
+                                                                                (0.6, 0.4),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.5, 0.5),
+                                                                                (0.6, 0.4),
+                                                                                (0.9, 0.5),
+                                                                                (0.6, 0.6),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.5, 0.5),
+                                                                                (0.6, 0.6),
+                                                                                (0.5, 0.9),
+                                                                                (0.4, 0.6),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.5, 0.5),
+                                                                                (0.4, 0.6),
+                                                                                (0.1, 0.5),
+                                                                                (0.4, 0.4),
+                                                                               ])),
+                                 ]),
+      Array{Covering.Section, 1}([
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0, 0.125),
+                                                                                (0.75, 0.5),
+                                                                                (1 ,0.875),
+                                                                                (0.25, 0.5),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0, 1),
+                                                                                (0, 0.5),
+                                                                                (0.5, 1),
+                                                                               ]))
+                                 ]),
+      Array{Covering.Section, 1}([
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.1, 0.1),
+                                                                                (0.2, 0.2),
+                                                                                (0.2, 0.8),
+                                                                                (0.1, 0.9),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.1, 0.1),
+                                                                                (0.9, 0.1),
+                                                                                (0.8, 0.2),
+                                                                                (0.2, 0.2),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.9, 0.1),
+                                                                                (0.9, 0.9),
+                                                                                (0.8, 0.8),
+                                                                                (0.8, 0.2),
+                                                                               ])),
+                                  Covering.Section(Array{Tuple{Real, Real}, 1}([
+                                                                                (0.9, 0.9),
+                                                                                (0.1, 0.9),
+                                                                                (0.2, 0.8),
+                                                                                (0.8, 0.8),
+                                                                               ])),
+                                 ]),
+     ]
 
-#function avoidRepeats(points)
-#    println("LÁ VAMOS NÓS")
-#    println("points antes: ", points)
-#    repeat = []
-#    for i in 1:length(points)
-#        for j in 1:length(points)
-#            if j == i
-#                continue
-#            end
-#
-#            if points[i][1] == points[j][1] && points[i][2] == points[j][2]
-#                push!(repeat, points[j])
-#                deleteat!(points, j)
-#            end
-#        end
-#    end
-#
-#    println("points depois: ", points)
-#    println("repeats depois: ", repeat)
-#    return points, repeat
-#end
-#function draw(r, points)
-#   if !drawing
-#       return
-#   end
-#
-#   V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
-#   Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-#   W = SH.intersect(V, A, r)
-#
-#   Draw.init(WIDTH, HEIGHT)
-#   Draw.coveringPartition(W, "xkcd:pink")
-#   Draw.coveringSection(A, 0, "xkcd:black")
-#   #Draw.commit()
-#   Draw.savefig("bateria/" * string(n) * ".png")
-#   println("...")
-#end
-#
-#function draw(WIDTH, HEIGHT, r, points, n)
-#    V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
-#    Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-#    P = Covering.voronoiDiagramToPartition(V, r)
-#    area, gᵣ, gₛ = Covering.areaAndGradient(P)
-#
-#    Draw.init(WIDTH, HEIGHT)
-#    Draw.voronoiDiagram(V)
-#    Draw.coveringPartition(P)
-#    Draw.savefig("img/" * string(n) * ".png")
-#end
+if haskey(ENV, "INSTANCE")
+    INSTANCE = parse(Int, ENV["INSTANCE"])
+end
+A = As[INSTANCE]
+
+function calculateArea()
+    total_area = 0
+    for Aⱼ in A
+        t, _, _ = Covering.areaAndGradient(Aⱼ, 0)
+        total_area += t
+    end
+    return total_area
+end
+total_area = calculateArea()
+
 function draw(WIDTH, HEIGHT, r, points, n)
    if !drawing
        return
@@ -81,14 +116,19 @@ function draw(WIDTH, HEIGHT, r, points, n)
 
    V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
    Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-   W = SH.intersect(V, A, r)
 
    Draw.init(WIDTH, HEIGHT)
-   Draw.coveringPartition(W, nothing)
-   Draw.coveringSection(A, 0, "xkcd:black")
    Draw.circles(r, points)
+
+   for Aⱼ in A
+       W = SH.intersect(V, Aⱼ, r)
+       #Draw.coveringPartition(W, "xkcd:pink")
+       Draw.coveringPartition(W, nothing)
+       Draw.coveringSection(Aⱼ, 0, "blue")
+   end
+
    Draw.commit()
-   Draw.savefig("bateria/" * string(n) * ".png")
+   Draw.savefig("bateria/" * string(INSTANCE) * "/" * string(n))
    println("...")
 end
 
@@ -117,9 +157,35 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        return r, points
    end
 
+   function draw(r, points)
+       if !drawing
+           return
+       end
+
+       V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
+       Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
+
+       Draw.init(WIDTH, HEIGHT)
+       Draw.circles(r, points)
+
+       for Aⱼ in A
+           W = SH.intersect(V, Aⱼ, r)
+           Draw.coveringPartition(W, "xkcd:pink")
+           Draw.coveringSection(Aⱼ, 0, "xkcd:black")
+       end
+
+       Draw.commit()
+       print("")
+   end
+
    function f(x)
        r, points = unpack(x)
 
+       if drawing && drawingAll
+           draw(r, points)
+       end
+
+       #println("R: ", r)
        return r
    end
 
@@ -141,10 +207,16 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       W = SH.intersect(V, A, r)
-       covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
 
-       return total_area - covered_area
+       uncovered_area = total_area
+       for Aⱼ in A
+           W = SH.intersect(V, Aⱼ, r)
+           area, _, _ = Covering.areaAndGradient(W)
+           uncovered_area -= area
+       end
+
+       #println("C: ", uncovered_area)
+       return uncovered_area
    end
 
    function ∇c(ind, x)
@@ -154,22 +226,33 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
 
        V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-       W = SH.intersect(V, A, r)
-       covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
+
+       gᵣ = 0
+       gₛ = fill((0.0, 0.0), n)
+       for Aⱼ in A
+           W = SH.intersect(V, Aⱼ, r)
+           _, gᵣⱼ, gₛⱼ = Covering.areaAndGradient(W)
+           gᵣ += gᵣⱼ
+           for i in 1:n
+               gₛ[i] = (gₛ[i][1] + gₛⱼ[i][1], gₛ[i][2] + gₛⱼ[i][2])
+           end
+       end
 
        #for i in repeats
        #    push!(gₛ, (0, 0))
        #end
        #println("GRAD C.: ", pack(gᵣ, gₛ))
+       #println("Aperte Enter pra continuar")
+       #readline(stdin)
 
        return collect(1:2n+1), pack(gᵣ, gₛ)
    end
 
    l = zeros(2n + 1)
-   l[1] = 1e-6
+   l[1] = 1e-14
 
    u = zeros(2n + 1)
-   u[1] = 5.0
+   u[1] = 10e20
    for i in 2:2n+1
        u[i] = 1.0
    end
@@ -181,7 +264,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
    try
        x, fx = AlgencanWrapper.optimize(n = 2n + 1, m = 1,
 
-                                        f = f, g = ∇f, h = ∇∇f,
+                                        f = f, g = ∇f,# h = ∇∇f,
                                         equatn = [1],
                                         c = c, jac = ∇c,
 
@@ -189,13 +272,14 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
                                         l = l,
                                         u = u,
 
-                                        nvparam = 1,
+                                        nvparam = 2,
                                         vparam = [
                                                   "ITERATIONS-OUTPUT-DETAIL 10",
+                                                  "PENALTY-PARAMETER-INITIAL-VALUE 1000"
                                                  ],
                                         #checkder = 1,
-                                        epsopt = 1.0e-8,
-                                        epsfeas = 1.0e-8
+                                        epsopt = 1.0e-6,
+                                        epsfeas = 1.0e-6
                                         )
 
        r, points = unpack(x)
@@ -208,10 +292,10 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        for p in points
            println("(", p[1], ", ", p[2], ")")
        end
-       if drawing
-           println("Digite ENTER para sair.")
-           readline(stdin)
-       end
+       #if drawing
+       #    println("Digite ENTER para sair.")
+       #    readline(stdin)
+       #end
 
        return r, points
    catch exc
@@ -243,11 +327,13 @@ function main()
     rmin = 1e10
     pointsmin = []
 
-    total_area, _, _ = Covering.areaAndGradient(A, 0)
+    #total_area, _, _ = Covering.areaAndGradient(A, 0)
     ϵ = 10e-4
+    
+    Random.seed!(1)
 
     for k in 1:1000
-        Random.seed!(1)
+        #println("Tentativa ", k)
         points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
 
         function insideHalfSpace(point, p, q)
@@ -280,15 +366,24 @@ function main()
             return true
         end
 
+        function pointIsInsideSomeConvexPolygon(point, polygons)
+            for polygon in polygons
+                if pointIsInsideConvexPolygon(point, polygon)
+                    return true
+                end
+            end
+
+            return false
+        end
+
         for (i, p) in enumerate(points)
-            while !pointIsInsideConvexPolygon(points[i], A)
-                println("Ponto $i ainda está fora. Re-sorteando.")
+            while !pointIsInsideSomeConvexPolygon(points[i], A)
+                #println("Ponto $i ainda está fora. Re-sorteando.")
                 points[i] = (randf(1, WIDTH-1, 1)[1], randf(1, HEIGHT-1, 1)[1])
             end
         end
 
-        r = randf(0.05, 0.15, 1)[1]
-        r = 0.1
+        r = (0.5 + (rand(1)[1]))/n
 
         try
             r, points = coverWithCircles(n, WIDTH, HEIGHT, r, points)
@@ -304,10 +399,15 @@ function main()
         if r < rmin
            V = Voronoi.Fortune.compute(points, WIDTH, HEIGHT)
            Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
-           W = SH.intersect(V, A, r)
-           covered_area, gᵣ, gₛ = Covering.areaAndGradient(W)
 
-           if total_area - covered_area < ϵ
+           uncovered_area = total_area
+           for Aⱼ in A
+               W = SH.intersect(V, Aⱼ, r)
+               area, _, _ = Covering.areaAndGradient(W)
+               uncovered_area -= area
+           end
+
+           if uncovered_area < ϵ
                rmin = r
                pointsmin = points
            else

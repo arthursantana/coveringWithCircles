@@ -126,14 +126,14 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
            draw(r, points)
        end
 
-       println("R: ", r)
+       #println("R: ", r)
        return r
    end
 
    function ∇f(x)
        grad = zeros(2n + 1)
        grad[1] = 1
-       println("GRAD: ", grad)
+       #println("GRAD: ", grad)
        return grad
    end
 
@@ -156,7 +156,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
            uncovered_area -= area
        end
 
-       println("C: ", uncovered_area)
+       #println("C: ", uncovered_area)
        return uncovered_area
    end
 
@@ -182,7 +182,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        #for i in repeats
        #    push!(gₛ, (0, 0))
        #end
-       println("GRAD C.: ", pack(gᵣ, gₛ))
+       #println("GRAD C.: ", pack(gᵣ, gₛ))
        #println("Aperte Enter pra continuar")
        #readline(stdin)
 

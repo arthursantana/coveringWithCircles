@@ -1,25 +1,54 @@
 module Draw
 
-using PyPlot
-using PyCall
-
-const patch = PyNULL()
-function __init__()
-    copy!(patch, pyimport("matplotlib.patches"))
-end
-
 import Voronoi
 import Covering
 
-TIKZ = false
-MATPLOTLIB = true
+TIKZ = true
+MATPLOTLIB = false
 
+if MATPLOTLIB
+    using PyPlot
+    using PyCall
 
-plt = PyPlot
+    const patch = PyNULL()
+    function __init__()
+        copy!(patch, pyimport("matplotlib.patches"))
+    end
+
+    plt = PyPlot
+end
+
+tikz_text = ""
 ax = nothing
 WIDTH = nothing
 HEIGHT = nothing
 FRAME = 0.1
+
+if TIKZ
+    COLOR_BLACK = "black"
+    COLOR_SILVER = "silver"
+    COLOR_AZURE = "azure"
+    COLOR_ORANGERED = "orangered"
+    COLOR_TOMATO = "blue"
+    COLOR_MAGENTA = "magenta"
+    COLOR_GOLD = "gold"
+    COLOR_GRAY = "gray"
+    COLOR_TAN = "tan"
+    COLOR_RED = "red"
+    COLOR_GREEN = "green"
+else
+    COLOR_BLACK = "xkcd:black"
+    COLOR_SILVER = "xkcd:silver"
+    COLOR_AZURE = "xkcd:azure"
+    COLOR_ORANGERED = "xkcd:orangered"
+    COLOR_TOMATO = "xkcd:tomato"
+    COLOR_MAGENTA = "xkcd:magenta"
+    COLOR_GOLD = "xkcd:gold"
+    COLOR_GRAY = "xkcd:gray"
+    COLOR_TAN = "xkcd:tan"
+    COLOR_RED = "xkcd:red"
+    COLOR_GREEN = "xkcd:green"
+end
 
 colors = ["white"]
 #colors = ["xkcd:grey", "xkcd:crimson", "xkcd:gold", "xkcd:green", "xkcd:azure", "xkcd:beige", "xkcd:silver", "xkcd:lavender", "xkcd:lightgreen", "xkcd:magenta", "xkcd:ivory", "xkcd:maroon", "xkcd:orange", "xkcd:orangered", "xkcd:orchid", "xkcd:pink", "xkcd:plum", "xkcd:gold", "xkcd:salmon", "xkcd:sienna", "xkcd:lime", "xkcd:tan", "xkcd:tomato", "xkcd:violet", "xkcd:wheat", "xkcd:indigo", "xkcd:yellowgreen", "xkcd:chocolate", "xkcd:coral", "xkcd:brown"]
@@ -47,11 +76,9 @@ end
 
 function init(w, h, ion=true)
     if TIKZ
-        println()
-        println("Tikzando...")
-        println()
+        global tikz_text
 
-        println("\\begin{tikzpicture}[thick, scale=10]")
+        tikz_text = "\\begin{tikzpicture}[thick, scale=10]\n"
     end
 
     if MATPLOTLIB
@@ -84,10 +111,9 @@ end
 
 function commit()
     if TIKZ
-        println("\\end{tikzpicture}")
-        println()
-        println("Tikzou.")
-        println()
+        global tikz_text
+
+        tikz_text *= "\\end{tikzpicture}\n\n"
     end
 
     if MATPLOTLIB
@@ -98,13 +124,29 @@ function commit()
 end
 
 function savefig(filename)
-   global plt
+    if TIKZ
+        global tikz_text
 
-   plt.savefig(filename)
+        filename *= ".tex"
+
+        open(filename, "w") do io
+            write(io, tikz_text)
+        end;
+    end
+
+    if MATPLOTLIB
+        global plt
+
+        filename *= ".png"
+
+        plt.savefig(filename)
+    end
 end
 
 function arc(p::Tuple{Real, Real}, r, θ1, θ2, color)
     if TIKZ
+        global tikz_text
+
         t1 = 2π*θ1/360
         x = p[1] + r*cos(t1)
         y = p[2] + r*sin(t1)
@@ -112,7 +154,8 @@ function arc(p::Tuple{Real, Real}, r, θ1, θ2, color)
         if θ2 < θ1
             θ2 += 360
         end
-        println("\\draw[$color] ($(x), $(y)) arc ($(θ1):$(θ2):$(r)cm);")
+
+        tikz_text *= "\\draw[$color] ($(x), $(y)) arc ($(θ1):$(θ2):$(r)cm);\n"
     end
 
     if MATPLOTLIB
@@ -124,9 +167,11 @@ end
 
 function circle(p::Tuple{Real, Real}, color, fill, r, l, zorder=1)
     if TIKZ
-        println("\\draw[$color] ($(p[1]), $(p[2])) circle ($(r)cm);")
+        global tikz_text
+
+        tikz_text *= "\\draw[$color] ($(p[1]), $(p[2])) circle ($(r)cm);\n"
         if fill
-            println("\\fill[$color] ($(p[1]), $(p[2])) circle ($(r)cm);")
+            tikz_text *= "\\fill[$color] ($(p[1]), $(p[2])) circle ($(r)cm);\n"
         end
     end
 
@@ -147,7 +192,9 @@ end
 
 function line(p1::Tuple{Real, Real}, p2::Tuple{Real, Real}, color)
     if TIKZ
-        println("\\draw[$color] ($(p1[1]), $(p1[2])) -- ($(p2[1]), $(p2[2]));")
+        global tikz_text
+
+        tikz_text *= "\\draw[$color] ($(p1[1]), $(p1[2])) -- ($(p2[1]), $(p2[2]));\n"
     end
 
     if MATPLOTLIB
@@ -186,10 +233,10 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
 
    # draw points
    for p in points
-      point(p, "xkcd:black", (ly <= p[2]))
+      point(p, COLOR_BLACK, (ly <= p[2]))
       if ly < p[2]
          f = Voronoi.Geometry.parabola(p, ly)
-         plot(f, "xkcd:silver", 0, WIDTH)
+         plot(f, COLOR_SILVER, 0, WIDTH)
       end
    end
 
@@ -212,7 +259,7 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
 		if f == nothing # point is over the sweep line
          if start == nothing # special case where there the first couple of points are on the same y coordinate
          else
-            Draw.line((p[1], ly), (p[1], start[2]), "xkcd:azure")
+            Draw.line((p[1], ly), (p[1], start[2]), COLOR_AZURE)
          end
 		else
          if 0 <= start[1]
@@ -227,7 +274,7 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
             fn = WIDTH
          end
 
-			plot(f, "xkcd:azure", st, fn)
+			plot(f, COLOR_AZURE, st, fn)
 		end
 
       start = finish
@@ -243,10 +290,10 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
          c = b.next
          O = Q.data[i].center
          r = O[2] - Q.data[i].coordinates[2]
-         circle(O, "xkcd:orangered", r)
-         thinLine(O, b.region.generator, "xkcd:orangered")
-         point(O, "xkcd:magenta", true)
-         point((O[1], O[2] - r), "xkcd:orangered", true)
+         circle(O, COLOR_ORANGERED, r)
+         thinLine(O, b.region.generator, COLOR_ORANGERED)
+         point(O, COLOR_MAGENTA, true)
+         point((O[1], O[2] - r), COLOR_ORANGERED, true)
       end
 
       i += 1
@@ -255,12 +302,12 @@ function fortuneIteration(V::Voronoi.Diagram.DCEL, T::Voronoi.BeachLine.BST, Q::
    # draw diagram edges
    for he in V.halfEdges
       if he.origin != nothing && he.twin.origin != nothing
-         Draw.line(he.origin, he.twin.origin, "xkcd:black")
+         Draw.line(he.origin, he.twin.origin, COLOR_BLACK)
       end
    end
 
    # draw sweepline
-	line((0, ly), (WIDTH, ly), "xkcd:gold")
+	line((0, ly), (WIDTH, ly), COLOR_GOLD)
 	commit()
 end
 
@@ -284,16 +331,16 @@ function voronoiDiagram(V::Voronoi.Diagram.DCEL)
     for he in V.halfEdges
         if he.origin != nothing
             if he.twin != nothing
-                Draw.line(he.origin, he.twin.origin, "xkcd:silver")
+                Draw.line(he.origin, he.twin.origin, COLOR_SILVER)
             elseif he.next != nothing
-                Draw.line(he.origin, he.next.origin, "xkcd:silver")
+                Draw.line(he.origin, he.next.origin, COLOR_SILVER)
             end
         end
     end
 
     # draw generators
     for r in V.regions
-        point(r.generator, "xkcd:black", true)
+        point(r.generator, COLOR_BLACK, true)
     end
 end
 
@@ -308,19 +355,19 @@ end
 
 function circles(r::Real, points)
     for center in points
-        circle(center, "xkcd:gray", false, r, 1)
-        point(center, "xkcd:black", true)
+        circle(center, COLOR_GRAY, false, r, 1)
+        point(center, COLOR_BLACK, true)
     end
 end
 
-function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
+function coveringSection(section::Covering.Section, r::Real, color=COLOR_TAN)
     if section.borderHead == nothing
         return
     end
 
     center = section.center
 
-    #circle(center, "xkcd:gray", false, r, 1)
+    #circle(center, COLOR_GRAY, false, r, 1)
 
     el = section.borderHead.next
     i = 0
@@ -328,15 +375,15 @@ function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
         arc(section.center, r,
             Covering.radianToDegrees(Covering.segmentAngle(center, el.origin)),
             Covering.radianToDegrees(Covering.segmentAngle(center, el.next.origin)),
-            "xkcd:tomato")
+            COLOR_TOMATO)
         #cp = crossingPoint(center, el.origin, r)
-        #line(cp, center, "xkcd:green")
+        #line(cp, center, COLOR_GREEN)
         #line(cp, el.origin, "xkcd:pale green")
     else
         if color !== nothing
             line(el.origin, el.next.origin, color)
         end
-        #line(el.origin, center, "xkcd:green")
+        #line(el.origin, center, COLOR_GREEN)
     end
 
     while (el != section.borderHead)
@@ -346,26 +393,26 @@ function coveringSection(section::Covering.Section, r::Real, color="xkcd:tan")
             arc(section.center, r,
                 Covering.radianToDegrees(Covering.segmentAngle(center, el.origin)),
                 Covering.radianToDegrees(Covering.segmentAngle(center, el.next.origin)),
-                "xkcd:tomato")
+                COLOR_TOMATO)
 
             #cp = crossingPoint(center, el.origin, r)
-            #line(cp, center, "xkcd:green")
-            #line(cp, el.origin, "xkcd:pale green")
+            #line(cp, center, COLOR_GREEN)
+            #line(cp, el.origin, COLOR_GREENreen")
         else
             if color !== nothing
                 line(el.origin, el.next.origin, color)
             end
-            #line(el.origin, center, "xkcd:green")
+            #line(el.origin, center, COLOR_GREEN)
         end
         for p in Covering.Covering.segmentArcIntersections(Voronoi.Diagram.HalfEdge(el.origin, false, nothing, 
                                                                           Voronoi.Diagram.HalfEdge(el.next.origin, false, nothing, nothing, nothing, center),
                                                                           nothing, center), center, r)
-            point(p, "xkcd:red", true)
+            #point(p, COLOR_RED, true)
         end
     end
 end
 
-function coveringPartition(P::Covering.Partition, color="xkcd:tan")
+function coveringPartition(P::Covering.Partition, color=COLOR_TAN)
     for section in P.sections
         Draw.coveringSection(section, P.r, color)
     end
