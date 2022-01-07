@@ -1,0 +1,2192 @@
+[ Info: n = 4; k = 1; rmin = 1.0e10; r = 0.28252415153800176
+[ Info: n = 4; k = 2; rmin = 0.28252415153800176; r = 0.28252415712630363
+[ Info: n = 4; k = 3; rmin = 0.28252415153800176; r = 0.2825241747330643
+[ Info: n = 4; k = 4; rmin = 0.28252415153800176; r = 0.2825900261909492
+[ Info: n = 4; k = 5; rmin = 0.28252415153800176; r = 0.2825241631860808
+[ Info: n = 4; k = 6; rmin = 0.28252415153800176; r = 0.2825899997180881
+[ Info: n = 4; k = 7; rmin = 0.28252415153800176; r = 0.28259003040791136
+[ Info: n = 4; k = 8; rmin = 0.28252415153800176; r = 0.28252416678444103
+[ Info: n = 4; k = 9; rmin = 0.28252415153800176; r = 0.28252410418378254
+[ Info: n = 4; k = 10; rmin = 0.28252410418378254; r = 0.28252413029442913
+[ Info: n = 4; k = 11; rmin = 0.28252410418378254; r = 0.2825899933213284
+[ Info: n = 4; k = 12; rmin = 0.28252410418378254; r = 0.2825241674329062
+[ Info: n = 4; k = 13; rmin = 0.28252410418378254; r = 0.28252415838438316
+[ Info: n = 4; k = 14; rmin = 0.28252410418378254; r = 0.28252408593829004
+[ Info: n = 4; k = 15; rmin = 0.28252408593829004; r = 0.28252413199133947
+[ Info: n = 4; k = 16; rmin = 0.28252408593829004; r = 0.2825241350351258
+[ Info: n = 4; k = 17; rmin = 0.28252408593829004; r = 0.2825241916219089
+[ Info: n = 4; k = 18; rmin = 0.28252408593829004; r = 0.28252417137477387
+[ Info: n = 4; k = 19; rmin = 0.28252408593829004; r = 0.2825242166977343
+[ Info: n = 4; k = 20; rmin = 0.28252408593829004; r = 0.28252411554969104
+[ Info: n = 4; k = 21; rmin = 0.28252408593829004; r = 0.28259003522746295
+[ Info: n = 4; k = 22; rmin = 0.28252408593829004; r = 0.28252408980519994
+[ Info: n = 4; k = 23; rmin = 0.28252408593829004; r = 0.2825242367381306
+[ Info: n = 4; k = 24; rmin = 0.28252408593829004; r = 0.2825900008848553
+[ Info: n = 4; k = 25; rmin = 0.28252408593829004; r = 0.28252416268945113
+[ Info: n = 4; k = 26; rmin = 0.28252408593829004; r = 0.2825900139217816
+[ Info: n = 4; k = 27; rmin = 0.28252408593829004; r = 0.28258999929467343
+[ Info: n = 4; k = 28; rmin = 0.28252408593829004; r = 0.28252418244911276
+[ Info: n = 4; k = 29; rmin = 0.28252408593829004; r = 0.28252415445690904
+[ Info: n = 4; k = 30; rmin = 0.28252408593829004; r = 1.0e10
+[ Info: n = 4; k = 31; rmin = 0.28252408593829004; r = 0.22735316159467284
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 32; rmin = 0.28252408593829004; r = 0.15858225105319118
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 33; rmin = 0.28252408593829004; r = 0.3111376456729362
+[ Info: n = 4; k = 34; rmin = 0.28252408593829004; r = 0.29165225391332533
+[ Info: n = 4; k = 35; rmin = 0.28252408593829004; r = 0.27300976014925815
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 36; rmin = 0.28252408593829004; r = 0.1296283968828505
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 37; rmin = 0.28252408593829004; r = 0.3179166050993348
+[ Info: n = 4; k = 38; rmin = 0.28252408593829004; r = 0.22287195199872634
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 39; rmin = 0.28252408593829004; r = 0.21693463906762245
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 40; rmin = 0.28252408593829004; r = 0.16883276424344013
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 41; rmin = 0.28252408593829004; r = 0.23094887142583387
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 42; rmin = 0.28252408593829004; r = 0.16584493616942042
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 43; rmin = 0.28252408593829004; r = 0.2356384353908107
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 44; rmin = 0.28252408593829004; r = 0.2147471228900807
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 45; rmin = 0.28252408593829004; r = 0.1492937559015955
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 46; rmin = 0.28252408593829004; r = 0.31447781779097006
+[ Info: n = 4; k = 47; rmin = 0.28252408593829004; r = 0.1482719830195795
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 48; rmin = 0.28252408593829004; r = 0.3527106532335149
+[ Info: n = 4; k = 49; rmin = 0.28252408593829004; r = 0.19264768469703353
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 50; rmin = 0.28252408593829004; r = 0.28304871593900127
+[ Info: n = 4; k = 51; rmin = 0.28252408593829004; r = 0.20171807245925455
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 52; rmin = 0.28252408593829004; r = 0.24825053805829855
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 53; rmin = 0.28252408593829004; r = 0.34416046989981847
+[ Info: n = 4; k = 54; rmin = 0.28252408593829004; r = 0.1390324240371964
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 55; rmin = 0.28252408593829004; r = 0.3434744406323219
+[ Info: n = 4; k = 56; rmin = 0.28252408593829004; r = 0.25278025384914987
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 57; rmin = 0.28252408593829004; r = 0.2855347663026107
+[ Info: n = 4; k = 58; rmin = 0.28252408593829004; r = 0.27250708253986083
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 59; rmin = 0.28252408593829004; r = 0.20421295069680068
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 60; rmin = 0.28252408593829004; r = 0.14801737830577288
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 61; rmin = 0.28252408593829004; r = 0.21847061230024062
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 62; rmin = 0.28252408593829004; r = 0.2512738245450517
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 63; rmin = 0.28252408593829004; r = 0.35365402624507314
+[ Info: n = 4; k = 64; rmin = 0.28252408593829004; r = 0.2707479457043685
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 65; rmin = 0.28252408593829004; r = 0.33641288109940976
+[ Info: n = 4; k = 66; rmin = 0.28252408593829004; r = 0.17272852688866314
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 67; rmin = 0.28252408593829004; r = 0.1490945852334038
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 68; rmin = 0.28252408593829004; r = 0.2730442064048016
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 69; rmin = 0.28252408593829004; r = 0.3541315133267809
+[ Info: n = 4; k = 70; rmin = 0.28252408593829004; r = 0.21913184443140465
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 71; rmin = 0.28252408593829004; r = 0.2873199063911332
+[ Info: n = 4; k = 72; rmin = 0.28252408593829004; r = 0.3404523925300722
+[ Info: n = 4; k = 73; rmin = 0.28252408593829004; r = 0.29590893811781854
+[ Info: n = 4; k = 74; rmin = 0.28252408593829004; r = 0.3544905675377099
+[ Info: n = 4; k = 75; rmin = 0.28252408593829004; r = 0.2881663220223072
+[ Info: n = 4; k = 76; rmin = 0.28252408593829004; r = 0.24112258210740478
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 77; rmin = 0.28252408593829004; r = 0.2183940225770375
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 78; rmin = 0.28252408593829004; r = 0.1385603056317879
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 79; rmin = 0.28252408593829004; r = 0.3204963016714975
+[ Info: n = 4; k = 80; rmin = 0.28252408593829004; r = 0.27066503711530066
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 81; rmin = 0.28252408593829004; r = 0.13534080108206153
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 82; rmin = 0.28252408593829004; r = 0.1889115623926133
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 83; rmin = 0.28252408593829004; r = 0.3376906246578809
+[ Info: n = 4; k = 84; rmin = 0.28252408593829004; r = 0.3539879399651318
+[ Info: n = 4; k = 85; rmin = 0.28252408593829004; r = 0.3742066333605276
+[ Info: n = 4; k = 86; rmin = 0.28252408593829004; r = 0.3178101272850063
+[ Info: n = 4; k = 87; rmin = 0.28252408593829004; r = 0.27846775921485045
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 88; rmin = 0.28252408593829004; r = 0.23641916419372938
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 89; rmin = 0.28252408593829004; r = 0.149889841538289
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 90; rmin = 0.28252408593829004; r = 0.2868313279833401
+[ Info: n = 4; k = 91; rmin = 0.28252408593829004; r = 0.312011115634668
+[ Info: n = 4; k = 92; rmin = 0.28252408593829004; r = 0.20342921535739317
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 93; rmin = 0.28252408593829004; r = 0.34189033123745877
+[ Info: n = 4; k = 94; rmin = 0.28252408593829004; r = 0.2605066682489291
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 95; rmin = 0.28252408593829004; r = 0.33993554922091296
+[ Info: n = 4; k = 96; rmin = 0.28252408593829004; r = 0.2249347938849574
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 97; rmin = 0.28252408593829004; r = 0.25512580755017905
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 98; rmin = 0.28252408593829004; r = 0.31491631001428105
+[ Info: n = 4; k = 99; rmin = 0.28252408593829004; r = 0.23081345206364984
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 100; rmin = 0.28252408593829004; r = 0.31061153442651857
+[ Info: n = 4; k = 101; rmin = 0.28252408593829004; r = 0.3633217149866381
+[ Info: n = 4; k = 102; rmin = 0.28252408593829004; r = 0.2819622231548382
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 103; rmin = 0.28252408593829004; r = 0.17571977187466892
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 104; rmin = 0.28252408593829004; r = 0.26168858510060033
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 105; rmin = 0.28252408593829004; r = 0.34017223574931527
+[ Info: n = 4; k = 106; rmin = 0.28252408593829004; r = 0.19671603909981256
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 107; rmin = 0.28252408593829004; r = 0.3028341207486731
+[ Info: n = 4; k = 108; rmin = 0.28252408593829004; r = 0.35622704230873886
+[ Info: n = 4; k = 109; rmin = 0.28252408593829004; r = 0.28800880241644344
+[ Info: n = 4; k = 110; rmin = 0.28252408593829004; r = 0.2469504334226254
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 111; rmin = 0.28252408593829004; r = 0.15222611911466472
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 112; rmin = 0.28252408593829004; r = 0.2509300365444673
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 113; rmin = 0.28252408593829004; r = 0.3061821245685595
+[ Info: n = 4; k = 114; rmin = 0.28252408593829004; r = 0.19430736082274336
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 115; rmin = 0.28252408593829004; r = 0.36234158969183783
+[ Info: n = 4; k = 116; rmin = 0.28252408593829004; r = 0.25996991867441877
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 117; rmin = 0.28252408593829004; r = 0.14950250286448974
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 118; rmin = 0.28252408593829004; r = 0.293287796606648
+[ Info: n = 4; k = 119; rmin = 0.28252408593829004; r = 0.20613707440583562
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 120; rmin = 0.28252408593829004; r = 0.28455508885454095
+[ Info: n = 4; k = 121; rmin = 0.28252408593829004; r = 0.30716932271821534
+[ Info: n = 4; k = 122; rmin = 0.28252408593829004; r = 0.34188948643043726
+[ Info: n = 4; k = 123; rmin = 0.28252408593829004; r = 0.186295231397475
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 124; rmin = 0.28252408593829004; r = 0.28275142489802646
+[ Info: n = 4; k = 125; rmin = 0.28252408593829004; r = 0.2693331692841613
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 126; rmin = 0.28252408593829004; r = 0.20263130172197363
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 127; rmin = 0.28252408593829004; r = 0.19872843449466204
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 128; rmin = 0.28252408593829004; r = 0.2473560283936141
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 129; rmin = 0.28252408593829004; r = 0.14235206345733653
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 130; rmin = 0.28252408593829004; r = 0.18883312146736814
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 131; rmin = 0.28252408593829004; r = 0.13766954473868215
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 132; rmin = 0.28252408593829004; r = 0.36721645132630926
+[ Info: n = 4; k = 133; rmin = 0.28252408593829004; r = 0.3103948954293159
+[ Info: n = 4; k = 134; rmin = 0.28252408593829004; r = 0.17839016456400503
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 135; rmin = 0.28252408593829004; r = 0.3235742893590366
+[ Info: n = 4; k = 136; rmin = 0.28252408593829004; r = 0.36075816268885713
+[ Info: n = 4; k = 137; rmin = 0.28252408593829004; r = 0.23042677026662461
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 138; rmin = 0.28252408593829004; r = 0.2096746081691473
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 139; rmin = 0.28252408593829004; r = 0.35013445375369495
+[ Info: n = 4; k = 140; rmin = 0.28252408593829004; r = 0.12705535925963968
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 141; rmin = 0.28252408593829004; r = 0.1479357648577227
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 142; rmin = 0.28252408593829004; r = 0.1995686900590648
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 143; rmin = 0.28252408593829004; r = 0.23447743431736318
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 144; rmin = 0.28252408593829004; r = 0.18986645012728537
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 145; rmin = 0.28252408593829004; r = 0.24856752248939668
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 146; rmin = 0.28252408593829004; r = 0.33014003414660886
+[ Info: n = 4; k = 147; rmin = 0.28252408593829004; r = 0.2626281015933353
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 148; rmin = 0.28252408593829004; r = 0.31467469972498885
+[ Info: n = 4; k = 149; rmin = 0.28252408593829004; r = 0.3099834449508213
+[ Info: n = 4; k = 150; rmin = 0.28252408593829004; r = 0.27631885751105445
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 151; rmin = 0.28252408593829004; r = 0.2858902767998392
+[ Info: n = 4; k = 152; rmin = 0.28252408593829004; r = 0.15104631125094564
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 153; rmin = 0.28252408593829004; r = 0.22452713172623107
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 154; rmin = 0.28252408593829004; r = 0.3162560842347237
+[ Info: n = 4; k = 155; rmin = 0.28252408593829004; r = 0.2616218013873815
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 156; rmin = 0.28252408593829004; r = 0.24283849967800797
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 157; rmin = 0.28252408593829004; r = 0.3258938144600516
+[ Info: n = 4; k = 158; rmin = 0.28252408593829004; r = 0.136435753267117
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 159; rmin = 0.28252408593829004; r = 0.1691620433233545
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 160; rmin = 0.28252408593829004; r = 0.13907633196528546
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 161; rmin = 0.28252408593829004; r = 0.35691067218266276
+[ Info: n = 4; k = 162; rmin = 0.28252408593829004; r = 0.14297012307328416
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 163; rmin = 0.28252408593829004; r = 0.3574664333806895
+[ Info: n = 4; k = 164; rmin = 0.28252408593829004; r = 0.15451190331103515
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 165; rmin = 0.28252408593829004; r = 0.23873277966992984
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 166; rmin = 0.28252408593829004; r = 0.21891510129613578
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 167; rmin = 0.28252408593829004; r = 0.3005612347648708
+[ Info: n = 4; k = 168; rmin = 0.28252408593829004; r = 0.3694514845259674
+[ Info: n = 4; k = 169; rmin = 0.28252408593829004; r = 0.33129789302625184
+[ Info: n = 4; k = 170; rmin = 0.28252408593829004; r = 0.22955007094023483
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 171; rmin = 0.28252408593829004; r = 0.19207823374738164
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 172; rmin = 0.28252408593829004; r = 0.2251516966486864
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 173; rmin = 0.28252408593829004; r = 0.330007616560769
+[ Info: n = 4; k = 174; rmin = 0.28252408593829004; r = 0.34797284314688925
+[ Info: n = 4; k = 175; rmin = 0.28252408593829004; r = 0.33448494113203686
+[ Info: n = 4; k = 176; rmin = 0.28252408593829004; r = 0.278761086265434
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 177; rmin = 0.28252408593829004; r = 0.25469535771909324
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 178; rmin = 0.28252408593829004; r = 0.2738456496144824
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 179; rmin = 0.28252408593829004; r = 0.2952158482347902
+[ Info: n = 4; k = 180; rmin = 0.28252408593829004; r = 0.25170084883891924
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 181; rmin = 0.28252408593829004; r = 0.26300068259222986
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 182; rmin = 0.28252408593829004; r = 0.19098077788703782
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 183; rmin = 0.28252408593829004; r = 0.30114665306012334
+[ Info: n = 4; k = 184; rmin = 0.28252408593829004; r = 0.21353010414955664
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 185; rmin = 0.28252408593829004; r = 0.1813986138184463
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 186; rmin = 0.28252408593829004; r = 0.2398309889587681
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 187; rmin = 0.28252408593829004; r = 0.31099019952153606
+[ Info: n = 4; k = 188; rmin = 0.28252408593829004; r = 0.2886366402299121
+[ Info: n = 4; k = 189; rmin = 0.28252408593829004; r = 0.34164271537793955
+[ Info: n = 4; k = 190; rmin = 0.28252408593829004; r = 0.21229842223814754
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 191; rmin = 0.28252408593829004; r = 0.2102365442649783
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 192; rmin = 0.28252408593829004; r = 0.2203788223776686
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 193; rmin = 0.28252408593829004; r = 0.12552497096545678
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 194; rmin = 0.28252408593829004; r = 0.1811607482228409
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 195; rmin = 0.28252408593829004; r = 0.25910634862006704
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 196; rmin = 0.28252408593829004; r = 0.3213865473836252
+[ Info: n = 4; k = 197; rmin = 0.28252408593829004; r = 0.36162346582798255
+[ Info: n = 4; k = 198; rmin = 0.28252408593829004; r = 0.28569171534861193
+[ Info: n = 4; k = 199; rmin = 0.28252408593829004; r = 0.20317563534824662
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 200; rmin = 0.28252408593829004; r = 0.3226591551317974
+[ Info: n = 4; k = 201; rmin = 0.28252408593829004; r = 0.31370889234587357
+[ Info: n = 4; k = 202; rmin = 0.28252408593829004; r = 0.15723287997186047
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 203; rmin = 0.28252408593829004; r = 0.3495698587259283
+[ Info: n = 4; k = 204; rmin = 0.28252408593829004; r = 0.23184402107111884
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 205; rmin = 0.28252408593829004; r = 0.3538670379786431
+[ Info: n = 4; k = 206; rmin = 0.28252408593829004; r = 0.3316985472780144
+[ Info: n = 4; k = 207; rmin = 0.28252408593829004; r = 0.13001930111785642
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 208; rmin = 0.28252408593829004; r = 0.18609115975953028
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 209; rmin = 0.28252408593829004; r = 0.1893158762092842
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 210; rmin = 0.28252408593829004; r = 0.3305356371807365
+[ Info: n = 4; k = 211; rmin = 0.28252408593829004; r = 0.17408291623911715
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 212; rmin = 0.28252408593829004; r = 0.20503548066877547
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 213; rmin = 0.28252408593829004; r = 0.24094859041742744
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 214; rmin = 0.28252408593829004; r = 0.17648819100894952
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 215; rmin = 0.28252408593829004; r = 0.1929099024681325
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 216; rmin = 0.28252408593829004; r = 0.3253815693719767
+[ Info: n = 4; k = 217; rmin = 0.28252408593829004; r = 0.16508204129309156
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 218; rmin = 0.28252408593829004; r = 0.17770809269549537
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 219; rmin = 0.28252408593829004; r = 0.16055784783548127
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 220; rmin = 0.28252408593829004; r = 0.35424829552345
+[ Info: n = 4; k = 221; rmin = 0.28252408593829004; r = 0.36454664784623286
+[ Info: n = 4; k = 222; rmin = 0.28252408593829004; r = 0.29295363668557173
+[ Info: n = 4; k = 223; rmin = 0.28252408593829004; r = 0.21421710215058742
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 224; rmin = 0.28252408593829004; r = 0.21925804073491845
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 225; rmin = 0.28252408593829004; r = 0.36827846441938605
+[ Info: n = 4; k = 226; rmin = 0.28252408593829004; r = 0.20758472860244825
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 227; rmin = 0.28252408593829004; r = 0.2216189034527714
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 228; rmin = 0.28252408593829004; r = 0.2858793032741427
+[ Info: n = 4; k = 229; rmin = 0.28252408593829004; r = 0.27923260096414326
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 230; rmin = 0.28252408593829004; r = 0.35378832571787633
+[ Info: n = 4; k = 231; rmin = 0.28252408593829004; r = 0.3594474256853293
+[ Info: n = 4; k = 232; rmin = 0.28252408593829004; r = 0.14920304630554143
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 233; rmin = 0.28252408593829004; r = 0.19099073465835792
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 234; rmin = 0.28252408593829004; r = 0.340522687999723
+[ Info: n = 4; k = 235; rmin = 0.28252408593829004; r = 0.2888983947606519
+[ Info: n = 4; k = 236; rmin = 0.28252408593829004; r = 0.16797491980085083
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 237; rmin = 0.28252408593829004; r = 0.33869771800884996
+[ Info: n = 4; k = 238; rmin = 0.28252408593829004; r = 0.16471455051887451
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 239; rmin = 0.28252408593829004; r = 0.1894599678728428
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 240; rmin = 0.28252408593829004; r = 0.37221985413767733
+[ Info: n = 4; k = 241; rmin = 0.28252408593829004; r = 0.2941323448915723
+[ Info: n = 4; k = 242; rmin = 0.28252408593829004; r = 0.28684842480911216
+[ Info: n = 4; k = 243; rmin = 0.28252408593829004; r = 0.3113985623806944
+[ Info: n = 4; k = 244; rmin = 0.28252408593829004; r = 0.3220922686975985
+[ Info: n = 4; k = 245; rmin = 0.28252408593829004; r = 0.3050920022744914
+[ Info: n = 4; k = 246; rmin = 0.28252408593829004; r = 0.20308649672933798
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 247; rmin = 0.28252408593829004; r = 0.17590764064217257
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 248; rmin = 0.28252408593829004; r = 0.13609605377452033
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 249; rmin = 0.28252408593829004; r = 0.1559665982398557
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 250; rmin = 0.28252408593829004; r = 0.1894583599619475
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 251; rmin = 0.28252408593829004; r = 0.22332250420103528
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 252; rmin = 0.28252408593829004; r = 0.3284886258891695
+[ Info: n = 4; k = 253; rmin = 0.28252408593829004; r = 0.18626972270521686
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 254; rmin = 0.28252408593829004; r = 0.18810720272636217
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 255; rmin = 0.28252408593829004; r = 0.34049466866144934
+[ Info: n = 4; k = 256; rmin = 0.28252408593829004; r = 0.31391352595672495
+[ Info: n = 4; k = 257; rmin = 0.28252408593829004; r = 0.3471927240256148
+[ Info: n = 4; k = 258; rmin = 0.28252408593829004; r = 0.34630573712945856
+[ Info: n = 4; k = 259; rmin = 0.28252408593829004; r = 0.2294917660693404
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 260; rmin = 0.28252408593829004; r = 0.34580135705857945
+[ Info: n = 4; k = 261; rmin = 0.28252408593829004; r = 0.3427977262868889
+[ Info: n = 4; k = 262; rmin = 0.28252408593829004; r = 0.33298898085359624
+[ Info: n = 4; k = 263; rmin = 0.28252408593829004; r = 0.3635897782896935
+[ Info: n = 4; k = 264; rmin = 0.28252408593829004; r = 0.23324592283116385
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 265; rmin = 0.28252408593829004; r = 0.18608226034039027
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 266; rmin = 0.28252408593829004; r = 0.15021985667925591
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 267; rmin = 0.28252408593829004; r = 0.2823164397032882
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 268; rmin = 0.28252408593829004; r = 0.29085974515409635
+[ Info: n = 4; k = 269; rmin = 0.28252408593829004; r = 0.2073955529544529
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 270; rmin = 0.28252408593829004; r = 0.2823506628169583
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 271; rmin = 0.28252408593829004; r = 0.16773864099538122
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 272; rmin = 0.28252408593829004; r = 0.3259004599698124
+[ Info: n = 4; k = 273; rmin = 0.28252408593829004; r = 0.3429071807298237
+[ Info: n = 4; k = 274; rmin = 0.28252408593829004; r = 0.34024177486531504
+[ Info: n = 4; k = 275; rmin = 0.28252408593829004; r = 0.295950402445555
+[ Info: n = 4; k = 276; rmin = 0.28252408593829004; r = 0.17066090956629182
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 277; rmin = 0.28252408593829004; r = 0.19896569671655195
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 278; rmin = 0.28252408593829004; r = 0.1873236902317857
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 279; rmin = 0.28252408593829004; r = 0.17446179714222715
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 280; rmin = 0.28252408593829004; r = 0.3520986925652605
+[ Info: n = 4; k = 281; rmin = 0.28252408593829004; r = 0.25640604336741646
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 282; rmin = 0.28252408593829004; r = 0.3241123469494665
+[ Info: n = 4; k = 283; rmin = 0.28252408593829004; r = 0.18907742863649352
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 284; rmin = 0.28252408593829004; r = 0.32296794603340856
+[ Info: n = 4; k = 285; rmin = 0.28252408593829004; r = 0.2729116120541372
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 286; rmin = 0.28252408593829004; r = 0.16888965704703018
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 287; rmin = 0.28252408593829004; r = 0.24929047333698767
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 288; rmin = 0.28252408593829004; r = 0.3358275798301721
+[ Info: n = 4; k = 289; rmin = 0.28252408593829004; r = 0.12778584466674026
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 290; rmin = 0.28252408593829004; r = 0.27742029625913783
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 291; rmin = 0.28252408593829004; r = 0.1342658559534553
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 292; rmin = 0.28252408593829004; r = 0.233389958979015
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 293; rmin = 0.28252408593829004; r = 0.16955295998835979
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 294; rmin = 0.28252408593829004; r = 0.2685835395165447
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 295; rmin = 0.28252408593829004; r = 0.26584704431605005
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 296; rmin = 0.28252408593829004; r = 0.3327905696246268
+[ Info: n = 4; k = 297; rmin = 0.28252408593829004; r = 0.32736865867898807
+[ Info: n = 4; k = 298; rmin = 0.28252408593829004; r = 0.2721095421488962
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 299; rmin = 0.28252408593829004; r = 0.3111395617660345
+[ Info: n = 4; k = 300; rmin = 0.28252408593829004; r = 0.22980231174357774
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 301; rmin = 0.28252408593829004; r = 0.3081799908353486
+[ Info: n = 4; k = 302; rmin = 0.28252408593829004; r = 0.27824585295877513
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 303; rmin = 0.28252408593829004; r = 0.14219043405893855
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 304; rmin = 0.28252408593829004; r = 0.15998749707516619
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 305; rmin = 0.28252408593829004; r = 0.20848522662278757
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 306; rmin = 0.28252408593829004; r = 0.2528579042610016
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 307; rmin = 0.28252408593829004; r = 0.3669482958975855
+[ Info: n = 4; k = 308; rmin = 0.28252408593829004; r = 0.25330416918480175
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 309; rmin = 0.28252408593829004; r = 0.20394818832898765
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 310; rmin = 0.28252408593829004; r = 0.3396921593251597
+[ Info: n = 4; k = 311; rmin = 0.28252408593829004; r = 0.21331545591929701
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 312; rmin = 0.28252408593829004; r = 0.2889225461685753
+[ Info: n = 4; k = 313; rmin = 0.28252408593829004; r = 0.25148137162895745
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 314; rmin = 0.28252408593829004; r = 0.34381667885505246
+[ Info: n = 4; k = 315; rmin = 0.28252408593829004; r = 0.1870841924759028
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 316; rmin = 0.28252408593829004; r = 0.24354913038008252
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 317; rmin = 0.28252408593829004; r = 0.16217414760288712
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 318; rmin = 0.28252408593829004; r = 0.2504197441150592
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 319; rmin = 0.28252408593829004; r = 0.15343753347504296
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 320; rmin = 0.28252408593829004; r = 0.17323023050067132
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 321; rmin = 0.28252408593829004; r = 0.2692897086444131
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 322; rmin = 0.28252408593829004; r = 0.1869710754471708
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 323; rmin = 0.28252408593829004; r = 0.3401198178887951
+[ Info: n = 4; k = 324; rmin = 0.28252408593829004; r = 0.24349499609491954
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 325; rmin = 0.28252408593829004; r = 0.2255127590753167
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 326; rmin = 0.28252408593829004; r = 0.149579143731556
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 327; rmin = 0.28252408593829004; r = 0.3042623188394281
+[ Info: n = 4; k = 328; rmin = 0.28252408593829004; r = 0.2709357648100881
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 329; rmin = 0.28252408593829004; r = 0.29090983258752556
+[ Info: n = 4; k = 330; rmin = 0.28252408593829004; r = 0.2593760038128156
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 331; rmin = 0.28252408593829004; r = 0.33428865765142474
+[ Info: n = 4; k = 332; rmin = 0.28252408593829004; r = 0.3134202768408056
+[ Info: n = 4; k = 333; rmin = 0.28252408593829004; r = 0.2175822821343255
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 334; rmin = 0.28252408593829004; r = 0.1687289211041328
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 335; rmin = 0.28252408593829004; r = 0.17766640365697534
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 336; rmin = 0.28252408593829004; r = 0.22157177608014744
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 337; rmin = 0.28252408593829004; r = 0.17565636382603655
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 338; rmin = 0.28252408593829004; r = 0.2706197604319378
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 339; rmin = 0.28252408593829004; r = 0.2775561601045528
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 340; rmin = 0.28252408593829004; r = 0.22888649907826675
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 341; rmin = 0.28252408593829004; r = 0.28038791182568373
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 342; rmin = 0.28252408593829004; r = 0.35456204554771925
+[ Info: n = 4; k = 343; rmin = 0.28252408593829004; r = 0.35053116992688715
+[ Info: n = 4; k = 344; rmin = 0.28252408593829004; r = 0.30134213324682824
+[ Info: n = 4; k = 345; rmin = 0.28252408593829004; r = 0.3393517059365259
+[ Info: n = 4; k = 346; rmin = 0.28252408593829004; r = 0.13565889871269293
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 347; rmin = 0.28252408593829004; r = 0.2043942635418039
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 348; rmin = 0.28252408593829004; r = 0.31472765512166856
+[ Info: n = 4; k = 349; rmin = 0.28252408593829004; r = 0.19447921380033895
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 350; rmin = 0.28252408593829004; r = 0.3564877727260122
+[ Info: n = 4; k = 351; rmin = 0.28252408593829004; r = 0.17924667705932718
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 352; rmin = 0.28252408593829004; r = 0.3570075375279043
+[ Info: n = 4; k = 353; rmin = 0.28252408593829004; r = 0.14378273082018816
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 354; rmin = 0.28252408593829004; r = 0.31760601442365904
+[ Info: n = 4; k = 355; rmin = 0.28252408593829004; r = 0.328121203184652
+[ Info: n = 4; k = 356; rmin = 0.28252408593829004; r = 0.2333494198302306
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 357; rmin = 0.28252408593829004; r = 0.29800845394868813
+[ Info: n = 4; k = 358; rmin = 0.28252408593829004; r = 0.16515082566019357
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 359; rmin = 0.28252408593829004; r = 0.1513586258275451
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 360; rmin = 0.28252408593829004; r = 0.22677027104083264
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 361; rmin = 0.28252408593829004; r = 0.30185375827154753
+[ Info: n = 4; k = 362; rmin = 0.28252408593829004; r = 0.31379416924627945
+[ Info: n = 4; k = 363; rmin = 0.28252408593829004; r = 0.3621586903838474
+[ Info: n = 4; k = 364; rmin = 0.28252408593829004; r = 0.3568111914036887
+[ Info: n = 4; k = 365; rmin = 0.28252408593829004; r = 0.21628189293815964
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 366; rmin = 0.28252408593829004; r = 0.3052205526805554
+[ Info: n = 4; k = 367; rmin = 0.28252408593829004; r = 0.22388009780925439
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 368; rmin = 0.28252408593829004; r = 0.18341873720344865
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 369; rmin = 0.28252408593829004; r = 0.18879604656102805
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 370; rmin = 0.28252408593829004; r = 0.17491044280343854
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 371; rmin = 0.28252408593829004; r = 0.1541188337945058
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 372; rmin = 0.28252408593829004; r = 0.31145696591401556
+[ Info: n = 4; k = 373; rmin = 0.28252408593829004; r = 0.30552236127511717
+[ Info: n = 4; k = 374; rmin = 0.28252408593829004; r = 0.1285336677045169
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 375; rmin = 0.28252408593829004; r = 0.273879023105696
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 376; rmin = 0.28252408593829004; r = 0.3483724597013458
+[ Info: n = 4; k = 377; rmin = 0.28252408593829004; r = 0.13015742459097002
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 378; rmin = 0.28252408593829004; r = 0.2987710425425572
+[ Info: n = 4; k = 379; rmin = 0.28252408593829004; r = 0.21647224567750428
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 380; rmin = 0.28252408593829004; r = 0.3665468827444396
+[ Info: n = 4; k = 381; rmin = 0.28252408593829004; r = 0.32639983729310307
+[ Info: n = 4; k = 382; rmin = 0.28252408593829004; r = 0.2057612993946249
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 383; rmin = 0.28252408593829004; r = 0.1579783962519311
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 384; rmin = 0.28252408593829004; r = 0.20949304340501046
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 385; rmin = 0.28252408593829004; r = 0.2351034726548496
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 386; rmin = 0.28252408593829004; r = 0.21100249707634577
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 387; rmin = 0.28252408593829004; r = 0.28905835295366455
+[ Info: n = 4; k = 388; rmin = 0.28252408593829004; r = 0.17023668413728799
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 389; rmin = 0.28252408593829004; r = 0.2926802934799485
+[ Info: n = 4; k = 390; rmin = 0.28252408593829004; r = 0.15210734638326584
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 391; rmin = 0.28252408593829004; r = 0.20534530150788582
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 392; rmin = 0.28252408593829004; r = 0.3549677491699646
+[ Info: n = 4; k = 393; rmin = 0.28252408593829004; r = 0.3187833798803005
+[ Info: n = 4; k = 394; rmin = 0.28252408593829004; r = 0.33604516600554596
+[ Info: n = 4; k = 395; rmin = 0.28252408593829004; r = 0.1510872429548366
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 396; rmin = 0.28252408593829004; r = 0.14694235009352768
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 397; rmin = 0.28252408593829004; r = 0.31760660498263565
+[ Info: n = 4; k = 398; rmin = 0.28252408593829004; r = 0.23010519541870583
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 399; rmin = 0.28252408593829004; r = 0.26602551026749266
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 400; rmin = 0.28252408593829004; r = 0.15776248765843426
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 401; rmin = 0.28252408593829004; r = 0.24331262309921076
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 402; rmin = 0.28252408593829004; r = 0.2680804743308087
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 403; rmin = 0.28252408593829004; r = 0.2907744032789272
+[ Info: n = 4; k = 404; rmin = 0.28252408593829004; r = 0.3541180037608009
+[ Info: n = 4; k = 405; rmin = 0.28252408593829004; r = 0.29096569566831887
+[ Info: n = 4; k = 406; rmin = 0.28252408593829004; r = 0.20789776489728584
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 407; rmin = 0.28252408593829004; r = 0.19527556751574848
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 408; rmin = 0.28252408593829004; r = 0.27788615338473105
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 409; rmin = 0.28252408593829004; r = 0.29434195946273595
+[ Info: n = 4; k = 410; rmin = 0.28252408593829004; r = 0.2303790798518252
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 411; rmin = 0.28252408593829004; r = 0.19346626914842446
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 412; rmin = 0.28252408593829004; r = 0.15247597661027584
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 413; rmin = 0.28252408593829004; r = 0.34654164813316235
+[ Info: n = 4; k = 414; rmin = 0.28252408593829004; r = 0.2566344874013562
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 415; rmin = 0.28252408593829004; r = 0.240538088981413
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 416; rmin = 0.28252408593829004; r = 0.20568366054767662
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 417; rmin = 0.28252408593829004; r = 0.3555321496319372
+[ Info: n = 4; k = 418; rmin = 0.28252408593829004; r = 0.25695649322546915
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 419; rmin = 0.28252408593829004; r = 0.2951467496753549
+[ Info: n = 4; k = 420; rmin = 0.28252408593829004; r = 0.29187265568259224
+[ Info: n = 4; k = 421; rmin = 0.28252408593829004; r = 0.34844814316235867
+[ Info: n = 4; k = 422; rmin = 0.28252408593829004; r = 0.15009612677368517
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 423; rmin = 0.28252408593829004; r = 0.19525854006450977
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 424; rmin = 0.28252408593829004; r = 0.3299997658974235
+[ Info: n = 4; k = 425; rmin = 0.28252408593829004; r = 0.2202114768728381
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 426; rmin = 0.28252408593829004; r = 0.3154217084976536
+[ Info: n = 4; k = 427; rmin = 0.28252408593829004; r = 0.34114538519126775
+[ Info: n = 4; k = 428; rmin = 0.28252408593829004; r = 0.24389590252951165
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 429; rmin = 0.28252408593829004; r = 0.2463996160274356
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 430; rmin = 0.28252408593829004; r = 0.23248021201083124
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 431; rmin = 0.28252408593829004; r = 0.12623997838358153
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 432; rmin = 0.28252408593829004; r = 0.13210357519315763
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 433; rmin = 0.28252408593829004; r = 0.1521399960741926
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 434; rmin = 0.28252408593829004; r = 0.1950739474441096
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 435; rmin = 0.28252408593829004; r = 0.17961341601271902
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 436; rmin = 0.28252408593829004; r = 0.2286268880341475
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 437; rmin = 0.28252408593829004; r = 0.23036472446297573
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 438; rmin = 0.28252408593829004; r = 0.32548767848913907
+[ Info: n = 4; k = 439; rmin = 0.28252408593829004; r = 0.20928793264807238
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 440; rmin = 0.28252408593829004; r = 0.3136296036140487
+[ Info: n = 4; k = 441; rmin = 0.28252408593829004; r = 0.12706745958585708
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 442; rmin = 0.28252408593829004; r = 0.3375358204921549
+[ Info: n = 4; k = 443; rmin = 0.28252408593829004; r = 0.12777181351394423
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 444; rmin = 0.28252408593829004; r = 0.14722638392383025
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 445; rmin = 0.28252408593829004; r = 0.25207768373000317
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 446; rmin = 0.28252408593829004; r = 0.35725541771336083
+[ Info: n = 4; k = 447; rmin = 0.28252408593829004; r = 0.27762591208374066
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 448; rmin = 0.28252408593829004; r = 0.14874247712697447
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 449; rmin = 0.28252408593829004; r = 0.26546486450946283
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 450; rmin = 0.28252408593829004; r = 0.3401358842470096
+[ Info: n = 4; k = 451; rmin = 0.28252408593829004; r = 0.17148316689154836
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 452; rmin = 0.28252408593829004; r = 0.28084038685711493
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 453; rmin = 0.28252408593829004; r = 0.1262978377083368
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 454; rmin = 0.28252408593829004; r = 0.33318876937576897
+[ Info: n = 4; k = 455; rmin = 0.28252408593829004; r = 0.215083878910258
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 456; rmin = 0.28252408593829004; r = 0.3187127725116412
+[ Info: n = 4; k = 457; rmin = 0.28252408593829004; r = 0.37005573659622876
+[ Info: n = 4; k = 458; rmin = 0.28252408593829004; r = 0.31556142715531904
+[ Info: n = 4; k = 459; rmin = 0.28252408593829004; r = 0.33839527486362364
+[ Info: n = 4; k = 460; rmin = 0.28252408593829004; r = 0.3465781500743877
+[ Info: n = 4; k = 461; rmin = 0.28252408593829004; r = 0.21556850026827384
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 462; rmin = 0.28252408593829004; r = 0.3027290024208929
+[ Info: n = 4; k = 463; rmin = 0.28252408593829004; r = 0.32217059994181674
+[ Info: n = 4; k = 464; rmin = 0.28252408593829004; r = 0.2762105964899378
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 465; rmin = 0.28252408593829004; r = 0.22944645857521523
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 466; rmin = 0.28252408593829004; r = 0.25638470968365257
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 467; rmin = 0.28252408593829004; r = 0.34961433890684707
+[ Info: n = 4; k = 468; rmin = 0.28252408593829004; r = 0.2896118116948597
+[ Info: n = 4; k = 469; rmin = 0.28252408593829004; r = 0.19774585263914496
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 470; rmin = 0.28252408593829004; r = 0.24979969335128355
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 471; rmin = 0.28252408593829004; r = 0.15661376163181917
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 472; rmin = 0.28252408593829004; r = 0.1791177157236002
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 473; rmin = 0.28252408593829004; r = 0.13950436152255152
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 474; rmin = 0.28252408593829004; r = 0.341579317833198
+[ Info: n = 4; k = 475; rmin = 0.28252408593829004; r = 0.17715046115878202
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 476; rmin = 0.28252408593829004; r = 0.28203093834657494
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 477; rmin = 0.28252408593829004; r = 0.25078202609067546
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 478; rmin = 0.28252408593829004; r = 0.1919255673166495
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 479; rmin = 0.28252408593829004; r = 0.24493644292881656
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 480; rmin = 0.28252408593829004; r = 0.21649287113354337
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 481; rmin = 0.28252408593829004; r = 0.17650778077652374
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 482; rmin = 0.28252408593829004; r = 0.2256057665492785
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 483; rmin = 0.28252408593829004; r = 0.2959257673519691
+[ Info: n = 4; k = 484; rmin = 0.28252408593829004; r = 0.15049797069952092
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 485; rmin = 0.28252408593829004; r = 0.23463562194758175
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 486; rmin = 0.28252408593829004; r = 0.3030856257116264
+[ Info: n = 4; k = 487; rmin = 0.28252408593829004; r = 0.3029677382955933
+[ Info: n = 4; k = 488; rmin = 0.28252408593829004; r = 0.21224295142152505
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 489; rmin = 0.28252408593829004; r = 0.20478718176740446
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 490; rmin = 0.28252408593829004; r = 0.25260335551920354
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 491; rmin = 0.28252408593829004; r = 0.34873299732083274
+[ Info: n = 4; k = 492; rmin = 0.28252408593829004; r = 0.1301610664516744
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 493; rmin = 0.28252408593829004; r = 0.20022936040808753
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 494; rmin = 0.28252408593829004; r = 0.20360213762021157
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 495; rmin = 0.28252408593829004; r = 0.31459904160754787
+[ Info: n = 4; k = 496; rmin = 0.28252408593829004; r = 0.37486112583475545
+[ Info: n = 4; k = 497; rmin = 0.28252408593829004; r = 0.3576349120712407
+[ Info: n = 4; k = 498; rmin = 0.28252408593829004; r = 0.2806790381932574
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 499; rmin = 0.28252408593829004; r = 0.3252584534092539
+[ Info: n = 4; k = 500; rmin = 0.28252408593829004; r = 0.2919591721050442
+[ Info: n = 4; k = 501; rmin = 0.28252408593829004; r = 0.3161246725449416
+[ Info: n = 4; k = 502; rmin = 0.28252408593829004; r = 0.12518192110114024
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 503; rmin = 0.28252408593829004; r = 0.29615641872704823
+[ Info: n = 4; k = 504; rmin = 0.28252408593829004; r = 0.2941767301504982
+[ Info: n = 4; k = 505; rmin = 0.28252408593829004; r = 0.1965766687540631
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 506; rmin = 0.28252408593829004; r = 0.17578114745675538
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 507; rmin = 0.28252408593829004; r = 0.29425761051777843
+[ Info: n = 4; k = 508; rmin = 0.28252408593829004; r = 0.32298032637322954
+[ Info: n = 4; k = 509; rmin = 0.28252408593829004; r = 0.25392697774064177
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 510; rmin = 0.28252408593829004; r = 0.2182635548584393
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 511; rmin = 0.28252408593829004; r = 0.30764982693781306
+[ Info: n = 4; k = 512; rmin = 0.28252408593829004; r = 0.30341088359840274
+[ Info: n = 4; k = 513; rmin = 0.28252408593829004; r = 0.2613180553987404
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 514; rmin = 0.28252408593829004; r = 0.1459495246204447
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 515; rmin = 0.28252408593829004; r = 0.34380309355803135
+[ Info: n = 4; k = 516; rmin = 0.28252408593829004; r = 0.2117316480199734
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 517; rmin = 0.28252408593829004; r = 0.16829294889598417
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 518; rmin = 0.28252408593829004; r = 0.1754162897844065
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 519; rmin = 0.28252408593829004; r = 0.31241240337229764
+[ Info: n = 4; k = 520; rmin = 0.28252408593829004; r = 0.29912362219441957
+[ Info: n = 4; k = 521; rmin = 0.28252408593829004; r = 0.26747334630143765
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 522; rmin = 0.28252408593829004; r = 0.2660178648193956
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 523; rmin = 0.28252408593829004; r = 0.31655009724420347
+[ Info: n = 4; k = 524; rmin = 0.28252408593829004; r = 0.273339806218702
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 525; rmin = 0.28252408593829004; r = 0.22325580681160934
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 526; rmin = 0.28252408593829004; r = 0.21815932006328398
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 527; rmin = 0.28252408593829004; r = 0.31480568181594676
+[ Info: n = 4; k = 528; rmin = 0.28252408593829004; r = 0.27944589078627186
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 529; rmin = 0.28252408593829004; r = 0.12631580722671643
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 530; rmin = 0.28252408593829004; r = 0.36721899138231456
+[ Info: n = 4; k = 531; rmin = 0.28252408593829004; r = 0.14959205494440997
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 532; rmin = 0.28252408593829004; r = 0.36122777639877546
+[ Info: n = 4; k = 533; rmin = 0.28252408593829004; r = 0.26883521163823404
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 534; rmin = 0.28252408593829004; r = 0.3383167269799122
+[ Info: n = 4; k = 535; rmin = 0.28252408593829004; r = 0.14731378870488238
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 536; rmin = 0.28252408593829004; r = 0.1583260147711652
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 537; rmin = 0.28252408593829004; r = 0.12768080663716674
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 538; rmin = 0.28252408593829004; r = 0.17636675679437575
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 539; rmin = 0.28252408593829004; r = 0.3728583568233067
+[ Info: n = 4; k = 540; rmin = 0.28252408593829004; r = 0.16625319444599657
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 541; rmin = 0.28252408593829004; r = 0.2806134169772137
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 542; rmin = 0.28252408593829004; r = 0.30559324071617355
+[ Info: n = 4; k = 543; rmin = 0.28252408593829004; r = 0.3413230885840375
+[ Info: n = 4; k = 544; rmin = 0.28252408593829004; r = 0.2020605052503619
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 545; rmin = 0.28252408593829004; r = 0.3008213135993121
+[ Info: n = 4; k = 546; rmin = 0.28252408593829004; r = 0.35189285637513706
+[ Info: n = 4; k = 547; rmin = 0.28252408593829004; r = 0.24543895856960135
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 548; rmin = 0.28252408593829004; r = 0.3409134401963603
+[ Info: n = 4; k = 549; rmin = 0.28252408593829004; r = 0.30332431268323784
+[ Info: n = 4; k = 550; rmin = 0.28252408593829004; r = 0.2853262691563131
+[ Info: n = 4; k = 551; rmin = 0.28252408593829004; r = 0.20998440736972668
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 552; rmin = 0.28252408593829004; r = 0.2016908252015362
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 553; rmin = 0.28252408593829004; r = 0.3320320055223774
+[ Info: n = 4; k = 554; rmin = 0.28252408593829004; r = 0.29080669683670907
+[ Info: n = 4; k = 555; rmin = 0.28252408593829004; r = 0.2746643301736857
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 556; rmin = 0.28252408593829004; r = 0.2308958351901959
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 557; rmin = 0.28252408593829004; r = 0.24560173842426697
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 558; rmin = 0.28252408593829004; r = 0.17781108595026812
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 559; rmin = 0.28252408593829004; r = 0.2181506018158061
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 560; rmin = 0.28252408593829004; r = 0.21492458165154127
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 561; rmin = 0.28252408593829004; r = 0.3259994442091641
+[ Info: n = 4; k = 562; rmin = 0.28252408593829004; r = 0.3502371178904564
+[ Info: n = 4; k = 563; rmin = 0.28252408593829004; r = 0.3272709026275701
+[ Info: n = 4; k = 564; rmin = 0.28252408593829004; r = 0.35764479620446576
+[ Info: n = 4; k = 565; rmin = 0.28252408593829004; r = 0.12783581838953118
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 566; rmin = 0.28252408593829004; r = 0.17114059032692047
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 567; rmin = 0.28252408593829004; r = 0.22994891938342904
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 568; rmin = 0.28252408593829004; r = 0.30811625830576683
+[ Info: n = 4; k = 569; rmin = 0.28252408593829004; r = 0.18640357362654347
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 570; rmin = 0.28252408593829004; r = 0.36950120548774223
+[ Info: n = 4; k = 571; rmin = 0.28252408593829004; r = 0.2435886674309775
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 572; rmin = 0.28252408593829004; r = 0.15472773867175188
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 573; rmin = 0.28252408593829004; r = 0.22685489563133998
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 574; rmin = 0.28252408593829004; r = 0.3188585146158877
+[ Info: n = 4; k = 575; rmin = 0.28252408593829004; r = 0.31098305523542485
+[ Info: n = 4; k = 576; rmin = 0.28252408593829004; r = 0.233835924663929
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 577; rmin = 0.28252408593829004; r = 0.12571164030535048
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 578; rmin = 0.28252408593829004; r = 0.3630840433583097
+[ Info: n = 4; k = 579; rmin = 0.28252408593829004; r = 0.27159877764033674
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 580; rmin = 0.28252408593829004; r = 0.23418928609013434
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 581; rmin = 0.28252408593829004; r = 0.17413933957962774
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 582; rmin = 0.28252408593829004; r = 0.3442808564765402
+[ Info: n = 4; k = 583; rmin = 0.28252408593829004; r = 0.2977535806064238
+[ Info: n = 4; k = 584; rmin = 0.28252408593829004; r = 0.25230228294005436
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 585; rmin = 0.28252408593829004; r = 0.22586781361167924
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 586; rmin = 0.28252408593829004; r = 0.36774427929527
+[ Info: n = 4; k = 587; rmin = 0.28252408593829004; r = 0.1645446104695487
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 588; rmin = 0.28252408593829004; r = 0.12951608418773886
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 589; rmin = 0.28252408593829004; r = 0.16346597335384555
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 590; rmin = 0.28252408593829004; r = 0.25944949916787535
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 591; rmin = 0.28252408593829004; r = 0.25363428664417664
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 592; rmin = 0.28252408593829004; r = 0.35560468790205296
+[ Info: n = 4; k = 593; rmin = 0.28252408593829004; r = 0.348164409387509
+[ Info: n = 4; k = 594; rmin = 0.28252408593829004; r = 0.3633785052252734
+[ Info: n = 4; k = 595; rmin = 0.28252408593829004; r = 0.1511776724452436
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 596; rmin = 0.28252408593829004; r = 0.21528382357411524
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 597; rmin = 0.28252408593829004; r = 0.34688772692688363
+[ Info: n = 4; k = 598; rmin = 0.28252408593829004; r = 0.12594789386912886
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 599; rmin = 0.28252408593829004; r = 0.3228231085563128
+[ Info: n = 4; k = 600; rmin = 0.28252408593829004; r = 0.3323307682618243
+[ Info: n = 4; k = 601; rmin = 0.28252408593829004; r = 0.19580578427459905
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 602; rmin = 0.28252408593829004; r = 0.34886459267275977
+[ Info: n = 4; k = 603; rmin = 0.28252408593829004; r = 0.3102517777986129
+[ Info: n = 4; k = 604; rmin = 0.28252408593829004; r = 0.18739516840354709
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 605; rmin = 0.28252408593829004; r = 0.21284119963681652
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 606; rmin = 0.28252408593829004; r = 0.22317926413289407
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 607; rmin = 0.28252408593829004; r = 0.3501845237992783
+[ Info: n = 4; k = 608; rmin = 0.28252408593829004; r = 0.13709122623299635
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 609; rmin = 0.28252408593829004; r = 0.2337447144580715
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 610; rmin = 0.28252408593829004; r = 0.37005386191320155
+[ Info: n = 4; k = 611; rmin = 0.28252408593829004; r = 0.36426090697129726
+[ Info: n = 4; k = 612; rmin = 0.28252408593829004; r = 0.3381728472373838
+[ Info: n = 4; k = 613; rmin = 0.28252408593829004; r = 0.3734602175960928
+[ Info: n = 4; k = 614; rmin = 0.28252408593829004; r = 0.2269127406174864
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 615; rmin = 0.28252408593829004; r = 0.20925934995457962
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 616; rmin = 0.28252408593829004; r = 0.18077708025691647
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 617; rmin = 0.28252408593829004; r = 0.28076840390134683
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 618; rmin = 0.28252408593829004; r = 0.3571036486275923
+[ Info: n = 4; k = 619; rmin = 0.28252408593829004; r = 0.33935725481528906
+[ Info: n = 4; k = 620; rmin = 0.28252408593829004; r = 0.2904751097245237
+[ Info: n = 4; k = 621; rmin = 0.28252408593829004; r = 0.13437405039814765
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 622; rmin = 0.28252408593829004; r = 0.2595658991802358
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 623; rmin = 0.28252408593829004; r = 0.2196422945045282
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 624; rmin = 0.28252408593829004; r = 0.13871172488432787
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 625; rmin = 0.28252408593829004; r = 0.3240977007735791
+[ Info: n = 4; k = 626; rmin = 0.28252408593829004; r = 0.31428547143745206
+[ Info: n = 4; k = 627; rmin = 0.28252408593829004; r = 0.37217482843674354
+[ Info: n = 4; k = 628; rmin = 0.28252408593829004; r = 0.3127059557373108
+[ Info: n = 4; k = 629; rmin = 0.28252408593829004; r = 0.3015318022721162
+[ Info: n = 4; k = 630; rmin = 0.28252408593829004; r = 0.30171946026998264
+[ Info: n = 4; k = 631; rmin = 0.28252408593829004; r = 0.2685388165621676
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 632; rmin = 0.28252408593829004; r = 0.32682166387906597
+[ Info: n = 4; k = 633; rmin = 0.28252408593829004; r = 0.3103451692127322
+[ Info: n = 4; k = 634; rmin = 0.28252408593829004; r = 0.19692568975462338
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 635; rmin = 0.28252408593829004; r = 0.23324913177352674
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 636; rmin = 0.28252408593829004; r = 0.18303044341628144
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 637; rmin = 0.28252408593829004; r = 0.31831191995149827
+[ Info: n = 4; k = 638; rmin = 0.28252408593829004; r = 0.21707085356159905
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 639; rmin = 0.28252408593829004; r = 0.19780822606461157
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 640; rmin = 0.28252408593829004; r = 0.2018414678288773
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 641; rmin = 0.28252408593829004; r = 0.33150793403055906
+[ Info: n = 4; k = 642; rmin = 0.28252408593829004; r = 0.2796088179659338
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 643; rmin = 0.28252408593829004; r = 0.3452508876745084
+[ Info: n = 4; k = 644; rmin = 0.28252408593829004; r = 0.14787403027519025
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 645; rmin = 0.28252408593829004; r = 0.15375020026851932
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 646; rmin = 0.28252408593829004; r = 0.2301748129209687
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 647; rmin = 0.28252408593829004; r = 0.30194974640400474
+[ Info: n = 4; k = 648; rmin = 0.28252408593829004; r = 0.3484639759263752
+[ Info: n = 4; k = 649; rmin = 0.28252408593829004; r = 0.36629802831012725
+[ Info: n = 4; k = 650; rmin = 0.28252408593829004; r = 0.36742332784534354
+[ Info: n = 4; k = 651; rmin = 0.28252408593829004; r = 0.24488706613499833
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 652; rmin = 0.28252408593829004; r = 0.15349649821132677
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 653; rmin = 0.28252408593829004; r = 0.25365175107700766
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 654; rmin = 0.28252408593829004; r = 0.31159957872948607
+[ Info: n = 4; k = 655; rmin = 0.28252408593829004; r = 0.14452724855507304
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 656; rmin = 0.28252408593829004; r = 0.1276806848217183
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 657; rmin = 0.28252408593829004; r = 0.24666969764462549
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 658; rmin = 0.28252408593829004; r = 0.13344589386634453
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 659; rmin = 0.28252408593829004; r = 0.34789920449665723
+[ Info: n = 4; k = 660; rmin = 0.28252408593829004; r = 0.16368141143353176
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 661; rmin = 0.28252408593829004; r = 0.29829047936460684
+[ Info: n = 4; k = 662; rmin = 0.28252408593829004; r = 0.266865785267226
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 663; rmin = 0.28252408593829004; r = 0.1656989521522687
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 664; rmin = 0.28252408593829004; r = 0.14453605020376525
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 665; rmin = 0.28252408593829004; r = 0.28305803009133323
+[ Info: n = 4; k = 666; rmin = 0.28252408593829004; r = 0.32160036164558703
+[ Info: n = 4; k = 667; rmin = 0.28252408593829004; r = 0.27170043108216313
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 668; rmin = 0.28252408593829004; r = 0.15701146933873766
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 669; rmin = 0.28252408593829004; r = 0.28485394657223817
+[ Info: n = 4; k = 670; rmin = 0.28252408593829004; r = 0.18800641758421227
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 671; rmin = 0.28252408593829004; r = 0.30979584280597877
+[ Info: n = 4; k = 672; rmin = 0.28252408593829004; r = 0.21212380640066691
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 673; rmin = 0.28252408593829004; r = 0.2142026789636235
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 674; rmin = 0.28252408593829004; r = 0.32007234419314806
+[ Info: n = 4; k = 675; rmin = 0.28252408593829004; r = 0.37285386328408915
+[ Info: n = 4; k = 676; rmin = 0.28252408593829004; r = 0.1589321023691122
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 677; rmin = 0.28252408593829004; r = 0.2882192955522592
+[ Info: n = 4; k = 678; rmin = 0.28252408593829004; r = 0.1699419602202774
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 679; rmin = 0.28252408593829004; r = 0.20615138283124967
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 680; rmin = 0.28252408593829004; r = 0.20896340156428606
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 681; rmin = 0.28252408593829004; r = 0.26657657187182854
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 682; rmin = 0.28252408593829004; r = 0.2830646353232113
+[ Info: n = 4; k = 683; rmin = 0.28252408593829004; r = 0.2553840186739501
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 684; rmin = 0.28252408593829004; r = 0.19076018872333617
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 685; rmin = 0.28252408593829004; r = 0.3671448563305269
+[ Info: n = 4; k = 686; rmin = 0.28252408593829004; r = 0.2769263780321588
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 687; rmin = 0.28252408593829004; r = 0.27661721424567637
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 688; rmin = 0.28252408593829004; r = 0.28121815128286903
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 689; rmin = 0.28252408593829004; r = 0.30477827219038034
+[ Info: n = 4; k = 690; rmin = 0.28252408593829004; r = 0.20410991666701384
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 691; rmin = 0.28252408593829004; r = 0.1319238248749771
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 692; rmin = 0.28252408593829004; r = 0.307115888629347
+[ Info: n = 4; k = 693; rmin = 0.28252408593829004; r = 0.2497243762792229
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 694; rmin = 0.28252408593829004; r = 0.2636032527078319
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 695; rmin = 0.28252408593829004; r = 0.34278258188081967
+[ Info: n = 4; k = 696; rmin = 0.28252408593829004; r = 0.30256031342616896
+[ Info: n = 4; k = 697; rmin = 0.28252408593829004; r = 0.2526397359347575
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 698; rmin = 0.28252408593829004; r = 0.34322740462034457
+[ Info: n = 4; k = 699; rmin = 0.28252408593829004; r = 0.24932379077135713
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 700; rmin = 0.28252408593829004; r = 0.2589153435415065
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 701; rmin = 0.28252408593829004; r = 0.337548853953691
+[ Info: n = 4; k = 702; rmin = 0.28252408593829004; r = 0.22425124681629138
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 703; rmin = 0.28252408593829004; r = 0.3075776462644447
+[ Info: n = 4; k = 704; rmin = 0.28252408593829004; r = 0.20036053347534488
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 705; rmin = 0.28252408593829004; r = 0.2297675430293587
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 706; rmin = 0.28252408593829004; r = 0.13500038566313666
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 707; rmin = 0.28252408593829004; r = 0.33145697251151296
+[ Info: n = 4; k = 708; rmin = 0.28252408593829004; r = 0.3144178055779835
+[ Info: n = 4; k = 709; rmin = 0.28252408593829004; r = 0.2588208986640802
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 710; rmin = 0.28252408593829004; r = 0.12943386820538966
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 711; rmin = 0.28252408593829004; r = 0.13791069864701222
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 712; rmin = 0.28252408593829004; r = 0.1705593967820364
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 713; rmin = 0.28252408593829004; r = 0.21703707229089814
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 714; rmin = 0.28252408593829004; r = 0.20030166401615934
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 715; rmin = 0.28252408593829004; r = 0.12938878722916874
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 716; rmin = 0.28252408593829004; r = 0.29243725765150197
+[ Info: n = 4; k = 717; rmin = 0.28252408593829004; r = 0.29095862844986914
+[ Info: n = 4; k = 718; rmin = 0.28252408593829004; r = 0.35670035622155216
+[ Info: n = 4; k = 719; rmin = 0.28252408593829004; r = 0.335614195454836
+[ Info: n = 4; k = 720; rmin = 0.28252408593829004; r = 0.21394215064170335
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 721; rmin = 0.28252408593829004; r = 0.17253056112097098
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 722; rmin = 0.28252408593829004; r = 0.3519193051667529
+[ Info: n = 4; k = 723; rmin = 0.28252408593829004; r = 0.2324255073048868
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 724; rmin = 0.28252408593829004; r = 0.3689660508178709
+[ Info: n = 4; k = 725; rmin = 0.28252408593829004; r = 0.2890306620916012
+[ Info: n = 4; k = 726; rmin = 0.28252408593829004; r = 0.16585070350999004
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 727; rmin = 0.28252408593829004; r = 0.31991533301476116
+[ Info: n = 4; k = 728; rmin = 0.28252408593829004; r = 0.1603490340119424
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 729; rmin = 0.28252408593829004; r = 0.345269113730157
+[ Info: n = 4; k = 730; rmin = 0.28252408593829004; r = 0.36149954657987127
+[ Info: n = 4; k = 731; rmin = 0.28252408593829004; r = 0.17519228807974768
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 732; rmin = 0.28252408593829004; r = 0.36362143115093126
+[ Info: n = 4; k = 733; rmin = 0.28252408593829004; r = 0.31425158507519635
+[ Info: n = 4; k = 734; rmin = 0.28252408593829004; r = 0.1841708866277033
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 735; rmin = 0.28252408593829004; r = 0.13091865758799637
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 736; rmin = 0.28252408593829004; r = 0.1807700677021814
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 737; rmin = 0.28252408593829004; r = 0.3228299930083458
+[ Info: n = 4; k = 738; rmin = 0.28252408593829004; r = 0.2681360534255837
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 739; rmin = 0.28252408593829004; r = 0.2528355418767237
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 740; rmin = 0.28252408593829004; r = 0.13812473768342942
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 741; rmin = 0.28252408593829004; r = 0.13285681022474588
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 742; rmin = 0.28252408593829004; r = 0.2272476723835577
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 743; rmin = 0.28252408593829004; r = 0.31210829054174577
+[ Info: n = 4; k = 744; rmin = 0.28252408593829004; r = 0.14063686084480315
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 745; rmin = 0.28252408593829004; r = 0.2502564107942631
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 746; rmin = 0.28252408593829004; r = 0.3693785116489503
+[ Info: n = 4; k = 747; rmin = 0.28252408593829004; r = 0.3326365530141638
+[ Info: n = 4; k = 748; rmin = 0.28252408593829004; r = 0.37305893260967554
+[ Info: n = 4; k = 749; rmin = 0.28252408593829004; r = 0.26016999985619627
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 750; rmin = 0.28252408593829004; r = 0.3097660415634824
+[ Info: n = 4; k = 751; rmin = 0.28252408593829004; r = 0.17091730632837288
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 752; rmin = 0.28252408593829004; r = 0.14631187087692715
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 753; rmin = 0.28252408593829004; r = 0.3669312485788387
+[ Info: n = 4; k = 754; rmin = 0.28252408593829004; r = 0.3163763988992621
+[ Info: n = 4; k = 755; rmin = 0.28252408593829004; r = 0.15477167945708248
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 756; rmin = 0.28252408593829004; r = 0.17861312278358388
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 757; rmin = 0.28252408593829004; r = 0.1993244261301198
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 758; rmin = 0.28252408593829004; r = 0.1985974040806967
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 759; rmin = 0.28252408593829004; r = 0.17499211929757497
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 760; rmin = 0.28252408593829004; r = 0.23442454317319256
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 761; rmin = 0.28252408593829004; r = 0.22274328774892288
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 762; rmin = 0.28252408593829004; r = 0.24486079849475945
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 763; rmin = 0.28252408593829004; r = 0.34957386028377224
+[ Info: n = 4; k = 764; rmin = 0.28252408593829004; r = 0.15271608851085228
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 765; rmin = 0.28252408593829004; r = 0.29859161491373926
+[ Info: n = 4; k = 766; rmin = 0.28252408593829004; r = 0.19354327070070848
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 767; rmin = 0.28252408593829004; r = 0.3608225160857418
+[ Info: n = 4; k = 768; rmin = 0.28252408593829004; r = 0.29124584958027927
+[ Info: n = 4; k = 769; rmin = 0.28252408593829004; r = 0.33164098053064306
+[ Info: n = 4; k = 770; rmin = 0.28252408593829004; r = 0.1889178063737194
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 771; rmin = 0.28252408593829004; r = 0.3150389367042864
+[ Info: n = 4; k = 772; rmin = 0.28252408593829004; r = 0.3634572561519937
+[ Info: n = 4; k = 773; rmin = 0.28252408593829004; r = 0.3009674158158355
+[ Info: n = 4; k = 774; rmin = 0.28252408593829004; r = 0.2638517298258716
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 775; rmin = 0.28252408593829004; r = 0.16521698586242423
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 776; rmin = 0.28252408593829004; r = 0.20874808394095123
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 777; rmin = 0.28252408593829004; r = 0.28622270392901317
+[ Info: n = 4; k = 778; rmin = 0.28252408593829004; r = 0.2990553742686904
+[ Info: n = 4; k = 779; rmin = 0.28252408593829004; r = 0.2621896911891754
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 780; rmin = 0.28252408593829004; r = 0.1311410707061617
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 781; rmin = 0.28252408593829004; r = 0.2243736944052362
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 782; rmin = 0.28252408593829004; r = 0.14071411932776573
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 783; rmin = 0.28252408593829004; r = 0.14092314829891972
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 784; rmin = 0.28252408593829004; r = 0.36794241764163593
+[ Info: n = 4; k = 785; rmin = 0.28252408593829004; r = 0.2012197801240892
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 786; rmin = 0.28252408593829004; r = 0.22546741478152404
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 787; rmin = 0.28252408593829004; r = 0.3101688770256363
+[ Info: n = 4; k = 788; rmin = 0.28252408593829004; r = 0.2762524176724451
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 789; rmin = 0.28252408593829004; r = 0.2350421215770213
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 790; rmin = 0.28252408593829004; r = 0.14908386361728648
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 791; rmin = 0.28252408593829004; r = 0.15204231513440308
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 792; rmin = 0.28252408593829004; r = 0.3146292979263429
+[ Info: n = 4; k = 793; rmin = 0.28252408593829004; r = 0.29957865632282926
+[ Info: n = 4; k = 794; rmin = 0.28252408593829004; r = 0.19226993227604988
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 795; rmin = 0.28252408593829004; r = 0.24427810540670752
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 796; rmin = 0.28252408593829004; r = 0.17891526757299897
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 797; rmin = 0.28252408593829004; r = 0.1687301530318086
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 798; rmin = 0.28252408593829004; r = 0.252101220485327
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 799; rmin = 0.28252408593829004; r = 0.14072361444478348
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 800; rmin = 0.28252408593829004; r = 0.35455191145401127
+[ Info: n = 4; k = 801; rmin = 0.28252408593829004; r = 0.36946134177725787
+[ Info: n = 4; k = 802; rmin = 0.28252408593829004; r = 0.20854598590827955
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 803; rmin = 0.28252408593829004; r = 0.2902356125772512
+[ Info: n = 4; k = 804; rmin = 0.28252408593829004; r = 0.3211334192527262
+[ Info: n = 4; k = 805; rmin = 0.28252408593829004; r = 0.3238257908208321
+[ Info: n = 4; k = 806; rmin = 0.28252408593829004; r = 0.311847729928148
+[ Info: n = 4; k = 807; rmin = 0.28252408593829004; r = 0.20025956676235318
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 808; rmin = 0.28252408593829004; r = 0.24203310112875898
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 809; rmin = 0.28252408593829004; r = 0.3482052717583427
+[ Info: n = 4; k = 810; rmin = 0.28252408593829004; r = 0.21879589413664946
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 811; rmin = 0.28252408593829004; r = 0.2526413028681271
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 812; rmin = 0.28252408593829004; r = 0.2788748218509764
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 813; rmin = 0.28252408593829004; r = 0.1253414814416129
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 814; rmin = 0.28252408593829004; r = 0.36964870755854184
+[ Info: n = 4; k = 815; rmin = 0.28252408593829004; r = 0.24352099952976541
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 816; rmin = 0.28252408593829004; r = 0.32199379715850673
+[ Info: n = 4; k = 817; rmin = 0.28252408593829004; r = 0.12767202839278818
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 818; rmin = 0.28252408593829004; r = 0.30277876479938165
+[ Info: n = 4; k = 819; rmin = 0.28252408593829004; r = 0.27013187316883264
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 820; rmin = 0.28252408593829004; r = 0.18656146634202936
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 821; rmin = 0.28252408593829004; r = 0.25046441543200804
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 822; rmin = 0.28252408593829004; r = 0.1649564105076245
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 823; rmin = 0.28252408593829004; r = 0.3467531832750289
+[ Info: n = 4; k = 824; rmin = 0.28252408593829004; r = 0.341275759128783
+[ Info: n = 4; k = 825; rmin = 0.28252408593829004; r = 0.33452844746037036
+[ Info: n = 4; k = 826; rmin = 0.28252408593829004; r = 0.23684566094787213
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 827; rmin = 0.28252408593829004; r = 0.35654903000796145
+[ Info: n = 4; k = 828; rmin = 0.28252408593829004; r = 0.13918848682124657
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 829; rmin = 0.28252408593829004; r = 0.2946379522631305
+[ Info: n = 4; k = 830; rmin = 0.28252408593829004; r = 0.29401506391474946
+[ Info: n = 4; k = 831; rmin = 0.28252408593829004; r = 0.1286430547483859
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 832; rmin = 0.28252408593829004; r = 0.34100865994812213
+[ Info: n = 4; k = 833; rmin = 0.28252408593829004; r = 0.17586999938550968
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 834; rmin = 0.28252408593829004; r = 0.22660903991763587
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 835; rmin = 0.28252408593829004; r = 0.1954798063980398
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 836; rmin = 0.28252408593829004; r = 0.23604974718584265
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 837; rmin = 0.28252408593829004; r = 0.1758852213473443
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 838; rmin = 0.28252408593829004; r = 0.1403566813983937
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 839; rmin = 0.28252408593829004; r = 0.2223963275171688
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 840; rmin = 0.28252408593829004; r = 0.1848259506303392
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 841; rmin = 0.28252408593829004; r = 0.14325551968060612
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 842; rmin = 0.28252408593829004; r = 0.2689455701453394
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 843; rmin = 0.28252408593829004; r = 0.2452923531533116
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 844; rmin = 0.28252408593829004; r = 0.3598525331520492
+[ Info: n = 4; k = 845; rmin = 0.28252408593829004; r = 0.1806603250698769
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 846; rmin = 0.28252408593829004; r = 0.30202726558976206
+[ Info: n = 4; k = 847; rmin = 0.28252408593829004; r = 0.2033038468984969
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 848; rmin = 0.28252408593829004; r = 0.21949508204823892
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 849; rmin = 0.28252408593829004; r = 0.13676305302331337
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 850; rmin = 0.28252408593829004; r = 0.15130082373936177
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 851; rmin = 0.28252408593829004; r = 0.1415832466773762
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 852; rmin = 0.28252408593829004; r = 0.33671817398170045
+[ Info: n = 4; k = 853; rmin = 0.28252408593829004; r = 0.15356988843138691
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 854; rmin = 0.28252408593829004; r = 0.2161405321833858
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 855; rmin = 0.28252408593829004; r = 0.36888046773015704
+[ Info: n = 4; k = 856; rmin = 0.28252408593829004; r = 0.23228810380778458
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 857; rmin = 0.28252408593829004; r = 0.30806479783578133
+[ Info: n = 4; k = 858; rmin = 0.28252408593829004; r = 0.21131752281118837
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 859; rmin = 0.28252408593829004; r = 0.33062206910569053
+[ Info: n = 4; k = 860; rmin = 0.28252408593829004; r = 0.16650732502510118
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 861; rmin = 0.28252408593829004; r = 0.23059563041556708
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 862; rmin = 0.28252408593829004; r = 0.20735075664602498
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 863; rmin = 0.28252408593829004; r = 0.36060799131247495
+[ Info: n = 4; k = 864; rmin = 0.28252408593829004; r = 0.1407817255990323
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 865; rmin = 0.28252408593829004; r = 0.2351895725432096
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 866; rmin = 0.28252408593829004; r = 0.3065670666882907
+[ Info: n = 4; k = 867; rmin = 0.28252408593829004; r = 0.29318038591579704
+[ Info: n = 4; k = 868; rmin = 0.28252408593829004; r = 0.2451932958297101
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 869; rmin = 0.28252408593829004; r = 0.3388543131223265
+[ Info: n = 4; k = 870; rmin = 0.28252408593829004; r = 0.3607113896182132
+[ Info: n = 4; k = 871; rmin = 0.28252408593829004; r = 0.3307347139168729
+[ Info: n = 4; k = 872; rmin = 0.28252408593829004; r = 0.2887683350488825
+[ Info: n = 4; k = 873; rmin = 0.28252408593829004; r = 0.2166618254623915
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 874; rmin = 0.28252408593829004; r = 0.22160004574116315
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 875; rmin = 0.28252408593829004; r = 0.1398076269191581
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 876; rmin = 0.28252408593829004; r = 0.2772057817903819
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 877; rmin = 0.28252408593829004; r = 0.21019193943003994
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 878; rmin = 0.28252408593829004; r = 0.15754990571306676
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 879; rmin = 0.28252408593829004; r = 0.24740541530947346
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 880; rmin = 0.28252408593829004; r = 0.26052116681090187
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 881; rmin = 0.28252408593829004; r = 0.1981150631792859
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 882; rmin = 0.28252408593829004; r = 0.15943464994088224
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 883; rmin = 0.28252408593829004; r = 0.3739385944417872
+[ Info: n = 4; k = 884; rmin = 0.28252408593829004; r = 0.2841774072535371
+[ Info: n = 4; k = 885; rmin = 0.28252408593829004; r = 0.1721185237532416
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 886; rmin = 0.28252408593829004; r = 0.2455192121921297
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 887; rmin = 0.28252408593829004; r = 0.23139948384222686
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 888; rmin = 0.28252408593829004; r = 0.273061488623349
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 889; rmin = 0.28252408593829004; r = 0.22733876559745475
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 890; rmin = 0.28252408593829004; r = 0.2438184763338686
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 891; rmin = 0.28252408593829004; r = 0.2768844357453083
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 892; rmin = 0.28252408593829004; r = 0.1318570732647043
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 893; rmin = 0.28252408593829004; r = 0.18634182956472523
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 894; rmin = 0.28252408593829004; r = 0.3264826361298196
+[ Info: n = 4; k = 895; rmin = 0.28252408593829004; r = 0.3349264654855078
+[ Info: n = 4; k = 896; rmin = 0.28252408593829004; r = 0.18566062116851506
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 897; rmin = 0.28252408593829004; r = 0.28256988440558345
+[ Info: n = 4; k = 898; rmin = 0.28252408593829004; r = 0.2855265837943058
+[ Info: n = 4; k = 899; rmin = 0.28252408593829004; r = 0.14254123468370644
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 900; rmin = 0.28252408593829004; r = 0.2894126737282813
+[ Info: n = 4; k = 901; rmin = 0.28252408593829004; r = 0.21029933891314873
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 902; rmin = 0.28252408593829004; r = 0.2593279554664091
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 903; rmin = 0.28252408593829004; r = 0.3459673970122172
+[ Info: n = 4; k = 904; rmin = 0.28252408593829004; r = 0.36132398381410413
+[ Info: n = 4; k = 905; rmin = 0.28252408593829004; r = 0.17011322545945273
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 906; rmin = 0.28252408593829004; r = 0.18754745349253804
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 907; rmin = 0.28252408593829004; r = 0.3195719757160976
+[ Info: n = 4; k = 908; rmin = 0.28252408593829004; r = 0.2519099673149733
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 909; rmin = 0.28252408593829004; r = 0.15714730396039772
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 910; rmin = 0.28252408593829004; r = 0.16527831404965337
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 911; rmin = 0.28252408593829004; r = 0.20931260371866783
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 912; rmin = 0.28252408593829004; r = 0.13176233829851508
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 913; rmin = 0.28252408593829004; r = 0.17891263948809144
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 914; rmin = 0.28252408593829004; r = 0.1387064794258504
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 915; rmin = 0.28252408593829004; r = 0.15779325958390317
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 916; rmin = 0.28252408593829004; r = 0.19048333839169396
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 917; rmin = 0.28252408593829004; r = 0.1700781952220055
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 918; rmin = 0.28252408593829004; r = 0.17337490409452505
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 919; rmin = 0.28252408593829004; r = 0.13335631301683848
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 920; rmin = 0.28252408593829004; r = 0.1355135361345245
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 921; rmin = 0.28252408593829004; r = 0.13063957609872184
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 922; rmin = 0.28252408593829004; r = 0.13092792419484478
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 923; rmin = 0.28252408593829004; r = 0.2918929810850517
+[ Info: n = 4; k = 924; rmin = 0.28252408593829004; r = 0.24050075772961593
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 925; rmin = 0.28252408593829004; r = 0.13940643993347113
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 926; rmin = 0.28252408593829004; r = 0.3149664310984064
+[ Info: n = 4; k = 927; rmin = 0.28252408593829004; r = 0.37199693686935337
+[ Info: n = 4; k = 928; rmin = 0.28252408593829004; r = 0.3322579487174904
+[ Info: n = 4; k = 929; rmin = 0.28252408593829004; r = 0.1777196429638152
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 930; rmin = 0.28252408593829004; r = 0.31022768201965645
+[ Info: n = 4; k = 931; rmin = 0.28252408593829004; r = 0.19616443840932957
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 932; rmin = 0.28252408593829004; r = 0.1884099563120139
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 933; rmin = 0.28252408593829004; r = 0.21720155046807144
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 934; rmin = 0.28252408593829004; r = 0.13417464952820723
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 935; rmin = 0.28252408593829004; r = 0.1690082906648449
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 936; rmin = 0.28252408593829004; r = 0.25670667208060255
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 937; rmin = 0.28252408593829004; r = 0.14284737341671466
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 938; rmin = 0.28252408593829004; r = 0.20468608050346798
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 939; rmin = 0.28252408593829004; r = 0.21280395863229984
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 940; rmin = 0.28252408593829004; r = 0.2924091700202774
+[ Info: n = 4; k = 941; rmin = 0.28252408593829004; r = 0.13633385638490841
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 942; rmin = 0.28252408593829004; r = 0.16279591622414513
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 943; rmin = 0.28252408593829004; r = 0.1288075438226905
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 944; rmin = 0.28252408593829004; r = 0.32952107153163945
+[ Info: n = 4; k = 945; rmin = 0.28252408593829004; r = 0.24646911869553145
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 946; rmin = 0.28252408593829004; r = 0.2323105614938007
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 947; rmin = 0.28252408593829004; r = 0.18218935065344832
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 948; rmin = 0.28252408593829004; r = 0.15946619200490592
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 949; rmin = 0.28252408593829004; r = 0.1383405440741819
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 950; rmin = 0.28252408593829004; r = 0.33271993729190524
+[ Info: n = 4; k = 951; rmin = 0.28252408593829004; r = 0.37017388134917706
+[ Info: n = 4; k = 952; rmin = 0.28252408593829004; r = 0.18228687729867527
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 953; rmin = 0.28252408593829004; r = 0.26240354594074206
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 954; rmin = 0.28252408593829004; r = 0.3589330619233658
+[ Info: n = 4; k = 955; rmin = 0.28252408593829004; r = 0.31992124286427837
+[ Info: n = 4; k = 956; rmin = 0.28252408593829004; r = 0.1293396290690747
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 957; rmin = 0.28252408593829004; r = 0.19115898279804705
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 958; rmin = 0.28252408593829004; r = 0.180169912145896
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 959; rmin = 0.28252408593829004; r = 0.26624000177802865
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 960; rmin = 0.28252408593829004; r = 0.3108763201138422
+[ Info: n = 4; k = 961; rmin = 0.28252408593829004; r = 0.18451549545625495
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 962; rmin = 0.28252408593829004; r = 0.2745467971844501
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 963; rmin = 0.28252408593829004; r = 0.2873670255852278
+[ Info: n = 4; k = 964; rmin = 0.28252408593829004; r = 0.33746506243830715
+[ Info: n = 4; k = 965; rmin = 0.28252408593829004; r = 0.37479849101056417
+[ Info: n = 4; k = 966; rmin = 0.28252408593829004; r = 0.21250109476160084
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 967; rmin = 0.28252408593829004; r = 0.25157883170067213
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 968; rmin = 0.28252408593829004; r = 0.26772676820110974
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 969; rmin = 0.28252408593829004; r = 0.32194968287768777
+[ Info: n = 4; k = 970; rmin = 0.28252408593829004; r = 0.2901278655267878
+[ Info: n = 4; k = 971; rmin = 0.28252408593829004; r = 0.1727011240544799
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 972; rmin = 0.28252408593829004; r = 0.34791300488272586
+[ Info: n = 4; k = 973; rmin = 0.28252408593829004; r = 0.19519803005767655
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 974; rmin = 0.28252408593829004; r = 0.16991403321968168
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 975; rmin = 0.28252408593829004; r = 0.2849689796366422
+[ Info: n = 4; k = 976; rmin = 0.28252408593829004; r = 0.323843332047268
+[ Info: n = 4; k = 977; rmin = 0.28252408593829004; r = 0.32252763888825037
+[ Info: n = 4; k = 978; rmin = 0.28252408593829004; r = 0.2630869932274941
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 979; rmin = 0.28252408593829004; r = 0.2738281421183205
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 980; rmin = 0.28252408593829004; r = 0.172492246142538
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 981; rmin = 0.28252408593829004; r = 0.1264828103890867
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 982; rmin = 0.28252408593829004; r = 0.26071161050118474
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 983; rmin = 0.28252408593829004; r = 0.13713269717405557
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 984; rmin = 0.28252408593829004; r = 0.1580369587446921
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 985; rmin = 0.28252408593829004; r = 0.2216897809513288
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 986; rmin = 0.28252408593829004; r = 0.22502399606630225
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 987; rmin = 0.28252408593829004; r = 0.22600601376763868
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 988; rmin = 0.28252408593829004; r = 0.2005376973629231
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 989; rmin = 0.28252408593829004; r = 0.32779282176872576
+[ Info: n = 4; k = 990; rmin = 0.28252408593829004; r = 0.14990476422018895
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 991; rmin = 0.28252408593829004; r = 0.3218115572949794
+[ Info: n = 4; k = 992; rmin = 0.28252408593829004; r = 0.25704885016402046
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 993; rmin = 0.28252408593829004; r = 0.3478700619643223
+[ Info: n = 4; k = 994; rmin = 0.28252408593829004; r = 0.3674373482663396
+[ Info: n = 4; k = 995; rmin = 0.28252408593829004; r = 0.25553857089270987
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 996; rmin = 0.28252408593829004; r = 0.24637303812563283
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 997; rmin = 0.28252408593829004; r = 0.21911737577400564
+┌ Warning: UNFEASIBLE
+└ @ Main ~/projects/master/dissertation/src/bateria.jl:414
+[ Info: n = 4; k = 998; rmin = 0.28252408593829004; r = 0.35593442909553297
+[ Info: n = 4; k = 999; rmin = 0.28252408593829004; r = 0.36345195609656206
+[ Info: n = 4; k = 1000; rmin = 0.28252408593829004; r = 0.3006037924685454
+
+real	1m10,996s
+user	1m10,512s
+sys	0m0,584s
