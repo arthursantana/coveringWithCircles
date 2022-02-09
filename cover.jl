@@ -112,7 +112,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        for Aⱼ in A
            W = SH.intersect(V, Aⱼ, r)
            Draw.coveringPartition(W, "xkcd:pink")
-           Draw.coveringSection(Aⱼ, 0, "xkcd:black")
+           Draw.filledPolygon(Aⱼ, "xkcd:black")
        end
 
        Draw.commit()

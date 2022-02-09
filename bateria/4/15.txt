@@ -1,0 +1,151 @@
+
+ ==============================================================================
+ This is ALGENCAN 3.1.1.
+ ALGENCAN, an Augmented Lagrangian method for nonlinear programming, is part of
+ the TANGO Project: Trustable Algorithms for Nonlinear General Optimization.
+ See http://www.ime.usp.br/~egbirgin/tango/ for details.
+ ==============================================================================
+
+ Processing array of parameters with   2 entrances:
+
+ ITERATIONS-OUTPUT-DETAIL                                                    10
+ PENALTY-PARAMETER-INITIAL-VALUE                                 1.00000000D+03
+
+ The specification file is not being used.
+
+ Available HSL subroutines = NONE           
+
+ ALGENCAN PARAMETERS:
+
+ firstde                =                    T
+ seconde                =                    F
+ truehpr                =                    F
+ hptype in TN           =               HAPPRO
+ lsslvr in TR           =            NONE/NONE
+ lsslvr in NW           =            NONE/NONE
+ lsslvr in ACCPROC      =            NONE/NONE
+ innslvr                =                   TN
+ accproc                =                    F
+ rmfixv                 =                    T
+ slacks                 =                    F
+ scale                  =                    T
+ epsfeas                =           1.0000D-06
+ epsopt                 =           1.0000D-06
+ efstain                =           1.0000D-03
+ eostain                =           1.0000D-09
+ efacc                  =           1.0000D-03
+ eoacc                  =           1.0000D-03
+ iprint                 =                   10
+ ncomp                  =                    6
+
+ Specification filename =                   ''
+ Output filename        =       'algencan.out'
+ Solution filename      =                   ''
+
+ Number of variables               :      31
+ Number of equality constraints    :       1
+ Number of inequality constraints  :       0
+ Number of bound constraints       :      61
+ Number of fixed variables         :       0
+
+ There are no fixed variables to be removed.
+
+ Objective function scale factor   : 1.0D+00
+ Smallest constraints scale factor : 5.6D-01
+
+ Entry to ALGENCAN.
+ Number of variables  :      31
+ Number of constraints:       1
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+  0         3.490D-02 2.D-01  3.490D-02 1.D-01 1.D-01 3.D-02 1.D-01    0   0   0
+  1 1.D+03  1.606D-01 5.D-03  1.606D-01 3.D-03 3.D-03 2.D-01 7.D-04   10C  0   0
+  2 1.D+03  1.088D-01 1.D-03  1.088D-01 8.D-04 8.D-04 1.D-03 2.D-04  100C  0   0
+  3 1.D+03  1.095D-01 1.D-03  1.095D-01 7.D-04 7.D-04 5.D-05 1.D-04  176C  0   0
+  4 1.D+04  1.117D-01 5.D-04  1.117D-01 3.D-04 3.D-04 9.D-06 4.D-05  197C  0   0
+  5 1.D+04  1.125D-01 3.D-04  1.125D-01 2.D-04 2.D-04 7.D-07 2.D-05  235C  0   0
+  6 1.D+05  1.139D-01 1.D-04  1.139D-01 7.D-05 7.D-05 5.D-07 4.D-06  273C  0   0
+  7 1.D+05  1.144D-01 8.D-05  1.144D-01 4.D-05 4.D-05 1.D-05 2.D-06  306P  0   0
+  8 1.D+06  1.151D-01 3.D-05  1.151D-01 1.D-05 1.D-05 2.D-05 4.D-07  361P  0   0
+  9 1.D+06  1.153D-01 2.D-05  1.153D-01 9.D-06 9.D-06 2.D-05 2.D-07  389P  0   0
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+ 10 1.D+07  1.157D-01 6.D-06  1.157D-01 3.D-06 3.D-06 2.D-05 4.D-08  424P  0   0
+ 11 1.D+07  1.158D-01 4.D-06  1.158D-01 2.D-06 2.D-06 2.D-05 2.D-08  460P  0   0
+ 12 1.D+08  1.159D-01 1.D-06  1.159D-01 7.D-07 7.D-07 9.D-07 4.D-09  515C  0   0
+ 13 1.D+08  1.160D-01 8.D-07  1.160D-01 4.D-07 4.D-07 5.D-06 2.D-09  555P  0   0
+ 14 1.D+08  1.160D-01 6.D-07  1.160D-01 3.D-07 3.D-07 4.D-05 1.D-09  590P  0   0
+ 15 1.D+01  1.160D-01 6.D-07  1.160D-01 3.D-07 3.D-07 1.D-05 1.D-09  603P  0   0
+ 16 1.D+01  1.160D-01 6.D-07  1.160D-01 3.D-07 3.D-07 3.D-06 1.D-09  612P  0   0
+ 17 1.D+01  1.160D-01 6.D-07  1.160D-01 3.D-07 3.D-07 9.D-07 1.D-09  613C  0   0
+
+ Flag of ALGENCAN: Solution was found.
+
+ User-provided subroutines calls counters: 
+
+ Subroutine fsub     (coded=T):     1306
+ Subroutine gsub     (coded=T):      719
+ Subroutine hsub     (coded=F):        0
+ Subroutine csub     (coded=T):     1376 (    1376 calls per constraint in avg)
+ Subroutine jacsub   (coded=T):      737 (     737 calls per constraint in avg)
+ Subroutine hcsub    (coded=F):        0 (       0 calls per constraint in avg)
+ Subroutine fcsub    (coded=F):        0
+ Subroutine gjacsub  (coded=F):        0
+ Subroutine gjacpsub (coded=F):        0
+ Subroutine hlsub    (coded=F):        0
+ Subroutine hlpsub   (coded=F):        0
+
+
+ Total CPU time in seconds =     5.02
+
+
+=================
+RESULTADO
+=================
+
+r = 0.11601324190795494
+s = 8.61970567802425
+pontos: 
+(0.6336095053476423, 0.13870308950373036)
+(0.897885087837426, 0.3532502657807113)
+(0.4436714540191739, 0.16325306134308767)
+(0.8381620169024308, 0.5531809499119489)
+(0.5822622901457222, 0.8363958624717286)
+(0.789643433118507, 0.8637563088622223)
+(0.13624369113778495, 0.21035656688149554)
+(0.13624368324106234, 0.6251188549187653)
+(0.2534508745939528, 0.13565415151355292)
+(0.8047047790033754, 0.3410812859236921)
+(0.18203502382214526, 0.8179649761778568)
+(0.16360413752826616, 0.4177377098542765)
+(0.8231310139386816, 0.16569311478269638)
+(0.8618271716695616, 0.7462818332067795)
+(0.37488114508123427, 0.8637563167589427)
+
+
+=================
+RESULTADO (n = 15)
+=================
+
+r = 0.11601324190795494
+s = 8.61970567802425
+pontos: 
+(0.6336095053476423, 0.13870308950373036)
+(0.897885087837426, 0.3532502657807113)
+(0.4436714540191739, 0.16325306134308767)
+(0.8381620169024308, 0.5531809499119489)
+(0.5822622901457222, 0.8363958624717286)
+(0.789643433118507, 0.8637563088622223)
+(0.13624369113778495, 0.21035656688149554)
+(0.13624368324106234, 0.6251188549187653)
+(0.2534508745939528, 0.13565415151355292)
+(0.8047047790033754, 0.3410812859236921)
+(0.18203502382214526, 0.8179649761778568)
+(0.16360413752826616, 0.4177377098542765)
+(0.8231310139386816, 0.16569311478269638)
+(0.8618271716695616, 0.7462818332067795)
+(0.37488114508123427, 0.8637563167589427)
+
+...

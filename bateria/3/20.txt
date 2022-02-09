@@ -1,0 +1,208 @@
+
+ ==============================================================================
+ This is ALGENCAN 3.1.1.
+ ALGENCAN, an Augmented Lagrangian method for nonlinear programming, is part of
+ the TANGO Project: Trustable Algorithms for Nonlinear General Optimization.
+ See http://www.ime.usp.br/~egbirgin/tango/ for details.
+ ==============================================================================
+
+ Processing array of parameters with   2 entrances:
+
+ ITERATIONS-OUTPUT-DETAIL                                                    10
+ PENALTY-PARAMETER-INITIAL-VALUE                                 1.00000000D+03
+
+ The specification file is not being used.
+
+ Available HSL subroutines = NONE           
+
+ ALGENCAN PARAMETERS:
+
+ firstde                =                    T
+ seconde                =                    F
+ truehpr                =                    F
+ hptype in TN           =               HAPPRO
+ lsslvr in TR           =            NONE/NONE
+ lsslvr in NW           =            NONE/NONE
+ lsslvr in ACCPROC      =            NONE/NONE
+ innslvr                =                   TN
+ accproc                =                    F
+ rmfixv                 =                    T
+ slacks                 =                    F
+ scale                  =                    T
+ epsfeas                =           1.0000D-06
+ epsopt                 =           1.0000D-06
+ efstain                =           1.0000D-03
+ eostain                =           1.0000D-09
+ efacc                  =           1.0000D-03
+ eoacc                  =           1.0000D-03
+ iprint                 =                   10
+ ncomp                  =                    6
+
+ Specification filename =                   ''
+ Output filename        =       'algencan.out'
+ Solution filename      =                   ''
+
+ Number of variables               :      41
+ Number of equality constraints    :       1
+ Number of inequality constraints  :       0
+ Number of bound constraints       :      81
+ Number of fixed variables         :       0
+
+ There are no fixed variables to be removed.
+
+ Objective function scale factor   : 1.0D+00
+ Smallest constraints scale factor : 4.5D-01
+
+ Entry to ALGENCAN.
+ Number of variables  :      41
+ Number of constraints:       1
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+  0         7.167D-02 1.D-01  7.167D-02 7.D-02 7.D-02 7.D-02 7.D-02    0   0   0
+  1 1.D+03  1.169D-01 1.D-02  1.169D-01 5.D-03 5.D-03 8.D-01 2.D-03   10C  0   0
+  2 1.D+03  1.075D-01 2.D-03  1.075D-01 8.D-04 8.D-04 9.D-04 1.D-04   90C  0   0
+  3 1.D+03  1.084D-01 1.D-03  1.084D-01 7.D-04 7.D-04 7.D-05 1.D-04  146C  0   0
+  4 1.D+04  1.110D-01 7.D-04  1.110D-01 3.D-04 3.D-04 7.D-06 3.D-05  276C  0   0
+  5 1.D+04  1.121D-01 5.D-04  1.121D-01 2.D-04 2.D-04 7.D-06 2.D-05  386P  0   0
+  6 1.D+05  1.141D-01 2.D-04  1.141D-01 8.D-05 8.D-05 4.D-05 4.D-06  573P  0   0
+  7 1.D+05  1.147D-01 1.D-04  1.147D-01 5.D-05 5.D-05 7.D-05 2.D-06  697P  0   0
+  8 1.D+06  1.158D-01 4.D-05  1.158D-01 2.D-05 2.D-05 2.D-05 4.D-07  910P  0   0
+  9 1.D+06  1.161D-01 3.D-05  1.161D-01 1.D-05 1.D-05 3.D-05 2.D-07 1063P  0   0
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+ 10 1.D+07  1.166D-01 9.D-06  1.166D-01 4.D-06 4.D-06 8.D-05 4.D-08 1316P  0   0
+ 11 1.D+07  1.168D-01 6.D-06  1.168D-01 2.D-06 2.D-06 5.D-05 2.D-08 1518P  0   0
+ 12 1.D+08  1.170D-01 2.D-06  1.170D-01 8.D-07 8.D-07 2.D-05 4.D-09 1837P  0   0
+ 13 1.D+08  1.171D-01 1.D-06  1.171D-01 5.D-07 5.D-07 9.D-05 2.D-09 2045P  0   0
+ 14 1.D+09  1.172D-01 4.D-07  1.172D-01 2.D-07 2.D-07 3.D-04 4.D-10 2346P  0   0
+ 15 1.D+09  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-04 2.D-10 2508P  0   0
+ 16 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 4.D-05 2.D-10 2514P  0   0
+ 17 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 6.D-05 2.D-10 2520P  0   0
+ 18 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 6.D-05 2.D-10 2526P  0   0
+ 19 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2532P  0   0
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+ 20 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 8.D-05 2.D-10 2538P  0   0
+ 21 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 7.D-05 2.D-10 2574P  0   0
+ 22 1.D+01  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 1.D-04 2.D-10 2578P  0   0
+ 23 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 1.D-04 2.D-10 2584P  0   0
+ 24 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 1.D-04 2.D-10 2593P  0   0
+ 25 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 6.D-05 2.D-10 2597P  0   0
+ 26 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 9.D-05 2.D-10 2628P  0   0
+ 27 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 6.D-05 2.D-10 2632P  0   0
+ 28 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 4.D-05 2.D-10 2637P  0   0
+ 29 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 7.D-05 2.D-10 2656P  0   0
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+ 30 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 7.D-05 2.D-10 2677P  0   0
+ 31 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 5.D-05 2.D-10 2683P  0   0
+ 32 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2689P  0   0
+ 33 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 4.D-05 2.D-10 2695P  0   0
+ 34 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2703P  0   0
+ 35 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2708P  0   0
+ 36 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 4.D-05 2.D-10 2717P  0   0
+ 37 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2725P  0   0
+ 38 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 2.D-05 2.D-10 2731P  0   0
+ 39 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 2.D-04 2.D-10 2736P  0   0
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+ 40 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 6.D-05 2.D-10 2745P  0   0
+ 41 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 2.D-05 2.D-10 2750P  0   0
+ 42 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 5.D-05 2.D-10 2756P  0   0
+ 43 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2762P  0   0
+ 44 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 1.D-05 2.D-10 2767P  0   0
+ 45 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 1.D-05 2.D-10 2770P  0   0
+ 46 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 3.D-05 2.D-10 2773P  0   0
+ 47 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 1.D-04 2.D-10 2795P  0   0
+ 48 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 7.D-05 2.D-10 2800P  0   0
+ 49 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 8.D-05 2.D-10 2806P  0   0
+
+out penalt  objective infeas  scaled    scaled infeas norm   |Grad| inner Newton
+ite         function  ibilty  obj-funct infeas +compl graLag infeas totit forKKT
+ 50 1.D+00  1.172D-01 3.D-07  1.172D-01 1.D-07 1.D-07 5.D-05 2.D-10 2814P  0   0
+
+ Flag of ALGENCAN: Maximum of iterations reached. The feasibility-
+ complementarity and optimality tolerances could not be achieved. Whether the
+ final iterate is a solution or not requires further analysis.
+
+ User-provided subroutines calls counters: 
+
+ Subroutine fsub     (coded=T):     9067
+ Subroutine gsub     (coded=T):     3118
+ Subroutine hsub     (coded=F):        0
+ Subroutine csub     (coded=T):     9269 (    9269 calls per constraint in avg)
+ Subroutine jacsub   (coded=T):     3169 (    3169 calls per constraint in avg)
+ Subroutine hcsub    (coded=F):        0 (       0 calls per constraint in avg)
+ Subroutine fcsub    (coded=F):        0
+ Subroutine gjacsub  (coded=F):        0
+ Subroutine gjacpsub (coded=F):        0
+ Subroutine hlsub    (coded=F):        0
+ Subroutine hlpsub   (coded=F):        0
+
+
+ Total CPU time in seconds =    25.37
+
+
+=================
+RESULTADO
+=================
+
+r = 0.11723148105949503
+s = 8.530131931818719
+pontos: 
+(0.468427798596746, 0.3620444069584848)
+(0.7819035324240846, 0.6528645014274072)
+(0.6729132549502467, 0.47579361651660373)
+(0.20495333900341733, 0.9766158245380548)
+(0.2475524626044375, 0.3149456065509886)
+(0.5830300450002042, 0.6566931290178145)
+(0.06639327714211499, 0.22208560665408175)
+(0.06871106518012646, 0.7854595079041349)
+(0.16071908455220985, 0.8102976641157847)
+(0.032541610025877715, 0.6016024433651064)
+(0.0, 0.9647451464221501)
+(0.18595270314180193, 0.8825243898792673)
+(0.4053030879945905, 0.9517990325708549)
+(0.30108898922256744, 0.4751826559506337)
+(0.20049412164240082, 0.9035227595803818)
+(0.2529363346763399, 0.8305017648008038)
+(0.19702852644400065, 0.7131540529798476)
+(0.20581797877719393, 0.8898414370305516)
+(0.47266318311587424, 0.495054009684442)
+(0.8949658909088631, 0.8221514426903168)
+
+
+=================
+RESULTADO (n = 20)
+=================
+
+r = 0.11723148105949503
+s = 8.530131931818719
+pontos: 
+(0.468427798596746, 0.3620444069584848)
+(0.7819035324240846, 0.6528645014274072)
+(0.6729132549502467, 0.47579361651660373)
+(0.20495333900341733, 0.9766158245380548)
+(0.2475524626044375, 0.3149456065509886)
+(0.5830300450002042, 0.6566931290178145)
+(0.06639327714211499, 0.22208560665408175)
+(0.06871106518012646, 0.7854595079041349)
+(0.16071908455220985, 0.8102976641157847)
+(0.032541610025877715, 0.6016024433651064)
+(0.0, 0.9647451464221501)
+(0.18595270314180193, 0.8825243898792673)
+(0.4053030879945905, 0.9517990325708549)
+(0.30108898922256744, 0.4751826559506337)
+(0.20049412164240082, 0.9035227595803818)
+(0.2529363346763399, 0.8305017648008038)
+(0.19702852644400065, 0.7131540529798476)
+(0.20581797877719393, 0.8898414370305516)
+(0.47266318311587424, 0.495054009684442)
+(0.8949658909088631, 0.8221514426903168)
+
+...

@@ -10,6 +10,7 @@ import Covering
 drawing = (haskey(ENV, "DRAW") && ENV["DRAW"] != "" && ENV["DRAW"] != "0")
 drawingAll = (haskey(ENV, "DRAWALL") && ENV["DRAWALL"] != "" && ENV["DRAWALL"] != "0")
 
+TRIES = 100
 WIDTH = 1.0
 HEIGHT = 1.0
 INSTANCE = 1
@@ -118,15 +119,15 @@ function draw(WIDTH, HEIGHT, r, points, n)
    Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
 
    Draw.init(WIDTH, HEIGHT)
-   Draw.circles(r, points)
 
    for Aⱼ in A
        W = SH.intersect(V, Aⱼ, r)
        #Draw.coveringPartition(W, "xkcd:pink")
        Draw.coveringPartition(W, nothing)
-       Draw.coveringSection(Aⱼ, 0, "blue")
+       Draw.filledPolygon(Aⱼ, "blue")
    end
 
+   Draw.circles(r, points)
    Draw.commit()
    Draw.savefig("bateria/" * string(INSTANCE) * "/" * string(n))
    println("...")
@@ -157,8 +158,7 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        return r, points
    end
 
-   function draw(r, points)
-       if !drawing
+   function draw(r, points) if !drawing
            return
        end
 
@@ -166,14 +166,14 @@ function coverWithCircles(n, WIDTH, HEIGHT, r, points)
        Voronoi.Intersect.intersect(V, Voronoi.Intersect.Rectangle(WIDTH, HEIGHT))
 
        Draw.init(WIDTH, HEIGHT)
-       Draw.circles(r, points)
 
        for Aⱼ in A
            W = SH.intersect(V, Aⱼ, r)
            Draw.coveringPartition(W, "xkcd:pink")
-           Draw.coveringSection(Aⱼ, 0, "xkcd:black")
+           Draw.filledPolygon(Aⱼ, "xkcd:black")
        end
 
+       Draw.circles(r, points)
        Draw.commit()
        print("")
    end
@@ -332,7 +332,7 @@ function main()
     
     Random.seed!(1)
 
-    for k in 1:1000
+    for k in 1:TRIES
         #println("Tentativa ", k)
         points = convert(Array{Tuple{Real, Real}}, collect(zip(randf(1, WIDTH-1, n), randf(1, HEIGHT-1, n))))
 

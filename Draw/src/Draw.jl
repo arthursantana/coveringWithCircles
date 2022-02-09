@@ -78,7 +78,7 @@ function init(w, h, ion=true)
     if TIKZ
         global tikz_text
 
-        tikz_text = "\\begin{tikzpicture}[thick, scale=10]\n"
+        tikz_text = "\\begin{tikzpicture}[thick, scale=3]\n"
     end
 
     if MATPLOTLIB
@@ -128,6 +128,7 @@ function savefig(filename)
         global tikz_text
 
         filename *= ".tex"
+        println("Escrevendo Tikz no arquivo ", filename)
 
         open(filename, "w") do io
             write(io, tikz_text)
@@ -188,6 +189,30 @@ end
 
 function circle(p::Tuple{Real, Real}, color, r)
    circle(p, color, false, r, 1)
+end
+
+function startFill(color)
+    if TIKZ
+        global tikz_text
+
+        tikz_text *= "\\filldraw[color=$color, fill=$color" * "!10] "
+    end
+end
+
+function fillVertex(p::Tuple{Real, Real})
+    if TIKZ
+        global tikz_text
+
+        tikz_text *= "($(p[1]), $(p[2])) -- "
+    end
+end
+
+function endFill()
+    if TIKZ
+        global tikz_text
+
+        tikz_text *= "cycle;\n"
+    end
 end
 
 function line(p1::Tuple{Real, Real}, p2::Tuple{Real, Real}, color)
@@ -357,6 +382,27 @@ function circles(r::Real, points)
     for center in points
         circle(center, COLOR_GRAY, false, r, 1)
         point(center, COLOR_BLACK, true)
+    end
+end
+
+function filledPolygon(section::Covering.Section, color=COLOR_TAN)
+    if TIKZ
+        if section.borderHead == nothing
+            return
+        end
+
+        startFill(color)
+
+        el = section.borderHead.next
+        fillVertex(el.origin)
+        while (el != section.borderHead)
+            el = el.next
+            fillVertex(el.origin)
+        end
+
+        endFill()
+    else
+        return coverginSection(section, 0, color)
     end
 end
 
